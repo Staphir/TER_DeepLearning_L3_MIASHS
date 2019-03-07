@@ -3,18 +3,41 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to TER_DeepLearning's documentation!
-============================================
+Bienvenue sur le site de notre TER sur le Deep-learning
+=======================================================
+
+--------------------------------------------------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
-
-
-Indices and tables
-==================
+Sommaire
+========
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+* `historique <historique.html>`_
+* `présentation des librairies <presentation_lib.html>`_
+* `recherche sur les librairies <recherche_lib.html>`_
+* `résolution de casse-tête <casse_tete.html>`_
+* `bibliographie <bibliographie.html>`_
+* `a propos <a_propos.html>`_
+
+
+.. toctree::
+   :maxdepth: 1
+
+Abstract
+========
+
+This is an abstract (wooo !!!!!)
+
+.. toctree::
+   :maxdepth: 1
+
+Résumé
+======
+
+Ouha, quel super résumé !!!!!!
