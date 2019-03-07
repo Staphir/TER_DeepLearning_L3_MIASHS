@@ -6,24 +6,21 @@
 Bienvenue sur le site de notre TER sur le Deep-learning
 =======================================================
 
---------------------------------------------------------
-
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
+
+
+--------------------------------------------------------
 
 Sommaire
 ========
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 * `historique <historique.html>`_
-* `présentation des librairies <presentation_lib.html>`_
-* `recherche sur les librairies <recherche_lib.html>`_
-* `résolution de casse-tête <casse_tete.html>`_
-* `bibliographie <bibliographie.html>`_
-* `a propos <a_propos.html>`_
+* `Présentation des librairies <presentation_lib.html>`_
+* `Recherche sur les librairies <recherche_lib.html>`_
+* `Résolution de casse-tête <casse_tete.html>`_
+* `Bibliographie <bibliographie.html>`_
+* `A propos <a_propos.html>`_
 
 
 .. toctree::
