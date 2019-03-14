@@ -12,17 +12,6 @@ Bienvenue sur le site de notre TER sur le Deep-learning
 
 --------------------------------------------------------
 
-Sommaire
-========
-
-* `historique <historique.html>`_
-* `Présentation des librairies <presentation_lib.html>`_
-* `Recherche sur les librairies <recherche_lib.html>`_
-* `Résolution de casse-tête <casse_tete.html>`_
-* `Bibliographie <bibliographie.html>`_
-* `A propos <a_propos.html>`_
-
-
 .. toctree::
    :maxdepth: 1
 
