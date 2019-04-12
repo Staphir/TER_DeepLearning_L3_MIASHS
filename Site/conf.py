@@ -88,6 +88,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 # documentation.
 #
 html_theme_options = {
+    
     # Bootswatch (http://bootswatch.com/) theme.
     #
     # Options are nothing (default) or the name of a valid theme
@@ -118,15 +119,14 @@ html_theme_options = {
     'navbar_links': [
         ("Accueil", "index"),
         ("Historique", "historique"),
-        ("Présentation des librairies", "presentation_lib"),
-        ("Recherche sur les librairies", "recherche_lib"),
+        ("Librairies python", "librairies"),
         ("Notre programme", "casse_tete"),
         ("Bibliographie", "bibliographie"),
         ("A propos", "a_propos"),
     ],
 
     # Render the next and previous page links in navbar. (Default: true)
-    'navbar_sidebarrel': True,
+    'navbar_sidebarrel': False,
 
     # Render the current pages TOC in the navbar. (Default: true)
     'navbar_pagenav': False,
@@ -145,7 +145,7 @@ html_theme_options = {
     # will break.
     #
     # Values: "true" (default) or "false"
-    'globaltoc_includehidden': "true",
+    'globaltoc_includehidden': "false",
 
     # HTML navbar class (Default: "navbar") to attach to <div> element.
     # For black navbar, do "navbar navbar-inverse"

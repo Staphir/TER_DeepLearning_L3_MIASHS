@@ -45,8 +45,7 @@
             
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="historique.html">Historique</a></li>
-                <li><a href="#">Présentation des librairies</a></li>
-                <li><a href="recherche_lib.html">Recherche sur les librairies</a></li>
+                <li><a href="#">Librairies python</a></li>
                 <li><a href="casse_tete.html">Notre programme</a></li>
                 <li><a href="bibliographie.html">Bibliographie</a></li>
                 <li><a href="a_propos.html">A propos</a></li>
@@ -65,25 +64,21 @@
               
             
             
-              
-                
-              
-            
             
             
             
           </ul>
 
-          
-            
+          <!---->
+            <!--
 <form class="navbar-form navbar-right" action="search.html" method="get">
  <div class="form-group">
   <input type="text" name="q" class="form-control" placeholder="Search" />
  </div>
   <input type="hidden" name="check_keywords" value="yes" />
   <input type="hidden" name="area" value="default" />
-</form>
-          
+</form>-->
+          <!---->
         </div>
     </div>
   </div>
@@ -93,14 +88,34 @@
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
 <li><a class="reference internal" href="#">Présentation de différentes librairies</a><ul>
-<li><a class="reference internal" href="#tensorflow">TensorFlow</a><ul>
+<li><a class="reference internal" href="#i-numpy">I - Numpy</a><ul>
 <li><a class="reference internal" href="#description">Description</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ii-theanos">II - Theanos</a><ul>
+<li><a class="reference internal" href="#id1">Description</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#iii-lasagne">III - Lasagne</a><ul>
+<li><a class="reference internal" href="#id2">Description</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#iv-pytorch">IV - Pytorch</a><ul>
+<li><a class="reference internal" href="#id3">Description</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#v-keras">V - Keras</a><ul>
+<li><a class="reference internal" href="#id4">Description</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#vi-tensorflow">VI - TensorFlow</a><ul>
+<li><a class="reference internal" href="#id5">Description</a></li>
 <li><a class="reference internal" href="#commentaire">Commentaire</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#pytorch">Pytorch</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#recherches-effectuees-sur-differentes-librairies">Recherches effectuées sur différentes librairies</a></li>
 </ul>
 
 <form action="search.html" method="get">
@@ -119,11 +134,56 @@
 <div class="toctree-wrapper compound">
 </div>
 <hr class="docutils" />
-<div class="section" id="tensorflow">
-<h2>TensorFlow<a class="headerlink" href="#tensorflow" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="i-numpy">
+<h2>I - Numpy<a class="headerlink" href="#i-numpy" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="description">
 <h3>Description<a class="headerlink" href="#description" title="Lien permanent vers ce titre">¶</a></h3>
-<p>TensorFlow est une librairie open source dévelopée par une équipe de Google (Google Brain Team). Elle n’est pas seulement
+<p>Librairies contenant plusieurs “outils” scientifiques notamment des tableaux multi-dimensionnels (numpy.array)
+et des fonctions d’affichage graphique (images, graphique…)
+<a class="reference external" href="http://www.numpy.org/">http://www.numpy.org/</a></p>
+</div>
+</div>
+<div class="section" id="ii-theanos">
+<h2>II - Theanos<a class="headerlink" href="#ii-theanos" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="id1">
+<h3>Description<a class="headerlink" href="#id1" title="Lien permanent vers ce titre">¶</a></h3>
+<p>LA “sous-couche” des autres librairies d’apprentissages de réseaux de neurones. Comme tous les autres utilise des Numpy.arrays
+<a class="reference external" href="http://deeplearning.net/software/theano/index.html">http://deeplearning.net/software/theano/index.html</a>
+Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.</p>
+</div>
+</div>
+<div class="section" id="iii-lasagne">
+<h2>III - Lasagne<a class="headerlink" href="#iii-lasagne" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="id2">
+<h3>Description<a class="headerlink" href="#id2" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Sur-couche de Theano, très légères, elle permet de simplifier la programmation de réseaux de neurones Theano.
+<a class="reference external" href="https://lasagne.readthedocs.io/en/latest/">https://lasagne.readthedocs.io/en/latest/</a></p>
+</div>
+</div>
+<div class="section" id="iv-pytorch">
+<h2>IV - Pytorch<a class="headerlink" href="#iv-pytorch" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="id3">
+<h3>Description<a class="headerlink" href="#id3" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Une des plus complètes des librairies de Deep-Learning. Elle est complexe mais permet une grande flexibilité
+et une personnalisation approfondie une fois les compétences acquises.
+<a class="reference external" href="https://pytorch.org/">https://pytorch.org/</a></p>
+</div>
+</div>
+<div class="section" id="v-keras">
+<h2>V - Keras<a class="headerlink" href="#v-keras" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="id4">
+<h3>Description<a class="headerlink" href="#id4" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Sûrement la librairie python la plus aimé car elle est simple d’utilisation sans pour autant brider les possibilités de programmation.
+Seul point faible, la personnalisation est difficile à mettre en place.
+Elle se programme sous forme de blocs, ce qui fait sa simplicité et réduit la longueur du code.
+<a class="reference external" href="https://keras.io/">https://keras.io/</a></p>
+</div>
+</div>
+<div class="section" id="vi-tensorflow">
+<h2>VI - TensorFlow<a class="headerlink" href="#vi-tensorflow" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="id5">
+<h3>Description<a class="headerlink" href="#id5" title="Lien permanent vers ce titre">¶</a></h3>
+<p>TensorFlow est une librairie open source développée  par une équipe de Google (Google Brain Team). Elle n’est pas seulement
 utilisée par Google mais par beaucoup d’autres grandes entreprises(Twitter, Coca-Cola, Airbus…). Cette librairie
 peut-être utilisée pour plusieurs plateformes (ordinateurs, telephones, internet et cloud).
 <a class="reference external" href="https://www.tensorflow.org">https://www.tensorflow.org</a></p>
@@ -134,9 +194,12 @@ peut-être utilisée pour plusieurs plateformes (ordinateurs, telephones, intern
 <div><strong>Parler des «&nbsp;add-on&nbsp;» existant ?</strong></div></blockquote>
 </div>
 </div>
-<div class="section" id="pytorch">
-<h2>Pytorch<a class="headerlink" href="#pytorch" title="Lien permanent vers ce titre">¶</a></h2>
 </div>
+<div class="section" id="recherches-effectuees-sur-differentes-librairies">
+<h1>Recherches effectuées sur différentes librairies<a class="headerlink" href="#recherches-effectuees-sur-differentes-librairies" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<hr class="docutils" />
 </div>
 
 
@@ -152,7 +215,7 @@ peut-être utilisée pour plusieurs plateformes (ordinateurs, telephones, intern
         <br/>
         
 <div id="sourcelink">
-  <a href="_sources/presentation_lib.rst.txt"
+  <a href="_sources/librairies.rst.txt"
      rel="nofollow">Source</a>
 </div>
       
