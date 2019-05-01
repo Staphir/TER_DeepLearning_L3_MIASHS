@@ -18,7 +18,7 @@ Bienvenue sur le site de notre TER sur le Deep-learning
 Abstract
 ========
 
-This is an abstract (wooo !!!!!)
+
 
 .. toctree::
    :maxdepth: 1
@@ -26,4 +26,4 @@ This is an abstract (wooo !!!!!)
 Résumé
 ======
 
-Ouha, quel super résumé !!!!!!
+
