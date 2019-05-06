@@ -116,7 +116,7 @@ class ShiftIt () :
         self.__path = []
 
     @property
-    def grid(self) : return self.__grid.tolist()
+    def grid(self, use_np=False) : return self.__grid if use_np else self.__grid.tolist()
     @property
     def height(self) : return self.__height
     @property
