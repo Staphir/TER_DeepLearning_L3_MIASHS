@@ -1,3 +1,10 @@
+# ===================================================================
+# Shift It : Little python build of sliding game shift it
+# ===================================================================
+__author__  = "Martin Devreese"
+__version__ = "1.0"
+__date__    = "06/05/2019"
+# -------------------------------------------------------------------
 from tkinter import (Frame, Tk, Button, Label, PhotoImage)
 import shiftit
 import sys
