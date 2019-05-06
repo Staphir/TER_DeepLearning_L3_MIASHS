@@ -13,8 +13,8 @@ from copy import deepcopy
 max_moves = 10
 colors = [0,1]
 mygame = ShiftIt(5, 5)
-tmp = mygame.moves
-possible_moves = dict(zip(range(len(tmp)), tmp))
+_tmp = mygame.moves
+possible_moves = dict(zip(range(len(tmp)), _tmp))
 possible_moves_reverse = {v:k for k,v in possible_moves.items()}
 
 

@@ -1,5 +1,6 @@
 from tkinter import (Frame, Tk, Button, Label, PhotoImage)
 import shiftit
+import sys
 from time import sleep
 # -------------------------------------------------------------------
 class GUI ():
@@ -10,6 +11,7 @@ class GUI ():
         self.__width = width
         self.__length = width * height
         self.__colors = ['yellow', 'red', 'blue', 'green', 'black', 'white']
+        self.__wd     = './TER_DeepLearning_L3_MIASHS/Code/jeux/Shiftit/'
         # ---
         self.__initialize()
 
@@ -39,7 +41,7 @@ class GUI ():
                 _dir, idx, key = self.get_idx_dir(x, y)
 
                 if idx is not None :
-                    _img = PhotoImage(file=f"./img/arrow{_dir}_flat.png")
+                    _img = PhotoImage(file=f"{self.__wd}img/arrow{_dir}_flat.png")
                     _cell = Button(self.__gridFrame, height=50, width=50, 
                         image=_img, relief='flat')
                     _cell.bind('<Button-1>', self.__buttonPress)
@@ -66,6 +68,7 @@ class GUI ():
             x, y = i//self.__width, i%self.__width
             cell = self.__cellList[i]
             cell['bg'] = self.__colors[self.__core.grid[x][y]]
+        self.__master.update()
 
     def __buttonPress(self, event=None) :
         _k, _w = [(k,w[0]) for k, w in self.__arrows.items() if w[0] == event.widget][0]
@@ -93,7 +96,8 @@ class GUI ():
         pass
 
     def solve(self) :
-        self.execPath(self.__core.path)
+        try : self.execPath(self.__core.path)
+        except Exception : pass # prevent error showing up after closing windows while solving
         self.__core.empty_path()
 
     def execPath(self, path=[]) :
@@ -101,17 +105,17 @@ class GUI ():
             
             _arr = self.__arrows[key][0]
             _dir = ['Up', 'Down'] if int(key[0])%2 else ['Left', 'Right']
-            _fileName = [f'./img/arrow{_dir[len(key)>1]}_{state}.png' for state in ['pressed', 'flat']]
+            _fileName = [f'{self.__wd}img/arrow{_dir[len(key)>1]}_{state}.png' for state in ['pressed', 'flat']]
             _img_pressed = PhotoImage(file=_fileName[0])
             _img_flat = PhotoImage(file=_fileName[1])
             # ---
             _arr.config(image=_img_pressed)
             self.__master.update()
             # ---
-            sleep(0.1)
+            sleep(.1)
             self.__core.shift(key)
             self.__update()
-            sleep(0.1)
+            sleep(.1)
             # ---
             _arr.config(image=_img_flat)
             self.__master.update()
@@ -120,6 +124,10 @@ class GUI ():
 # -------------------------------------------------------------------
 if __name__ == "__main__":
     root = Tk()
-    mygui = GUI(root, 5, 5)
+    try :
+        n, m = int(sys.argv[1]), int(sys.argv[2])
+        mygui = GUI(root, n, m)
+    except (ValueError, IndexError) :
+        mygui = GUI(root, 5, 5)
     root.mainloop()
 # -------------------------------------------------------------------
