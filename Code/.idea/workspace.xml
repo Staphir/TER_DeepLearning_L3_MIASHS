@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1802d66c-147b-4e94-b09f-6993ce9505c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tensorflow/train_shiftit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jeux/Shiftit/shiftit.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jeux/Shiftit/shiftit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensorflow/train_shiftit.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tensorflow/train_shiftit.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +34,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Tensorflow/train_shiftit.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-170">
-                  <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+                <state relative-caret-position="374">
+                  <caret line="56" selection-start-line="56" selection-end-line="56" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -48,7 +50,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Jeux/Shiftit/shiftit.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
+                <state relative-caret-position="1173">
                   <caret line="109" column="12" selection-start-line="109" selection-start-column="12" selection-end-line="109" selection-end-column="12" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
@@ -200,15 +202,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557147480653</updated>
-      <workItem from="1557147491744" duration="9367000" />
+      <workItem from="1557147491744" duration="13152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9367000" />
+    <option name="totallyTimeSpent" value="13152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14563759" />
@@ -221,7 +224,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4546742" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4546742" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -249,8 +252,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tensorflow/train_shiftit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="374">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
