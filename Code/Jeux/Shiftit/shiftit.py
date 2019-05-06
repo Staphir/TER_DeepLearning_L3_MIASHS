@@ -102,8 +102,14 @@ class ShiftIt () :
     def height(self) : return self.__height
     @property
     def width(self) : return self.__width
+    @property
+    def moves(self) :
+        lines = range(0,self.height*2,2)
+        column = range(1,self.width*2, 2)
+        return np.array(["{0} {0}'".format(key).split()
+            for key in [*lines,*column]]).flatten().tolist()
 # -------------------------------------------------------------------
-def adjacent(x1, y1, x2, y2) : # unused
+def adjacent(x1, y1, x2, y2) : # 1unused
     return x1-x2 in [-1,1] != y1-y2 in [-1,1]
 # -------------------------------------------------------------------
 if __name__ == "__main__":
@@ -123,5 +129,6 @@ if __name__ == "__main__":
         # print(f"{mygame}\n{'-'*15}")
     # ---
     print(f"{mygame}\n{'-'*15}")
+    print(mygame.moves)
 
 # -------------------------------------------------------------------
