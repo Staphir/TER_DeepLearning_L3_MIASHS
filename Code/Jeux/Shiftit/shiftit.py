@@ -124,6 +124,8 @@ class ShiftIt () :
     @property
     def path(self) : return self.__path
     @property
+    def state(self) : return self.__check_success()
+    @property
     def moves(self) : 
         return sorted(["{}{}".format(key, "'" if i%2 else '') for i, key in 
             enumerate([*list(range(0, self.height*2, 2))*2, *list(range(1, self.width*2, 2))*2])])

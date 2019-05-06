@@ -5,7 +5,7 @@ __author__  = "Martin Devreese"
 __version__ = "1.0"
 __date__    = "06/05/2019"
 # -------------------------------------------------------------------
-from tkinter import (Frame, Tk, Button, Label, PhotoImage)
+from tkinter import (Frame, Tk, Button, Label, PhotoImage, StringVar)
 import shiftit
 import sys
 from time import sleep
@@ -17,7 +17,7 @@ class GUI ():
         self.__height = height
         self.__width = width
         self.__length = width * height
-        self.__colors = ['yellow', 'red', 'blue', 'green', 'black', 'white']
+        self.__colors = ['orange', 'red', 'blue', 'green', 'black', 'white']
         self.__wd     = './TER_DeepLearning_L3_MIASHS/Code/jeux/Shiftit/'
         # ---
         self.__initialize()
@@ -37,6 +37,10 @@ class GUI ():
             command=self.reset).grid(row=1, column=2, ipadx=5, ipady=2, padx=10)        
         Button(header, text='Shuffle', font='Helvetica 12', relief='groove', 
             command=self.shuffle).grid(row=1, column=3, ipadx=5, ipady=2, padx=10)
+        self.__successVar = StringVar()
+        self.__successVar.set('True')
+        Label(header, text='SUCCESS :').grid(row=2, column=1, pady=20)
+        Label(header, textvariable=self.__successVar).grid(row=2, column=2)
         # ---
         self.__arrows = dict()
         self.__cellList = []
@@ -75,6 +79,7 @@ class GUI ():
             x, y = i//self.__width, i%self.__width
             cell = self.__cellList[i]
             cell['bg'] = self.__colors[self.__core.grid[x][y]]
+        self.__successVar.set(str(self.__core.state))
         self.__master.update()
 
     def __buttonPress(self, event=None) :
