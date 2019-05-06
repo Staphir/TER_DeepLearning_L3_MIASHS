@@ -1,11 +1,14 @@
 import numpy as np
-from random import randrange
+from random import randrange, choice
 # -------------------------------------------------------------------
 class ShiftIt () :
     def __init__(self, n:int, m:int) :
-        self.__height  = n
-        self.__width   = m
-        self.__grid    = np.zeros((n, m), int)
+        self.__height = n
+        self.__width  = m
+        self.__grid   = np.zeros((n, m), int)
+        self.__path   = []
+        # ---
+        self.generate()
     
     def __str__(self) :
         return '\n'.join(map(str, self.grid))
@@ -47,15 +50,22 @@ class ShiftIt () :
         return [(x+i,y+j) for i, j in c if x+i 
             in range(self.height) and y+j in range(self.width)
             and self.__grid[x+i,y+j] == color]
+ 
+    def __get_revKey(self, key:str) :
+        return key[0] if len(key)>1 else f"{key}'"
 
-    def generate(self,) : #c:int) : 
+    def generate(self) : #c:int) : 
         # assert c <= 10, 'No more than 10 different colors'
         # nb de cases de chaques couleurs
+        
         nbcells = randrange(3, self.height*self.width-3)
+        self.__path = []
 
         success = False
 
         while not success :
+
+            self.__grid = np.zeros((self.__height, self.__width), int)
 
             beg = (randrange(self.height), randrange(self.width))
             _seen = [beg]
@@ -69,32 +79,34 @@ class ShiftIt () :
                 _seen.append((x,y))
 
             success = self.__check_success()
-            if not success : 
-                self.__grid = np.zeros((self.height, self.width), int)
 
     def shuffle(self, n:int) :
         success = True
-        path = []
 
         while success :
 
             for _ in range(n) :
-                idx = randrange(self.width + self.height)
-                key = '{}{}'.format(idx, "'" if randrange(2) else '')
-                self.shift(key); path.append(key[0] if len(key)>1 else f"{key}'")
+
+                key = choice(self.moves)
+                self.shift(key)
 
             success = self.__check_success()
-        
-        return path[::-1]
+
+        return self.__path
 
     def shift(self, key:str) :
         """
         row -> even; col -> odd
         """
         vec = int(key[0])%2; idx = int(key[0])//2
-        grid = np.rot90(self.__grid,-1) if vec else self.__grid
-        grid[idx] = np.roll(grid[idx], -1 if len(key)>1 else 1)
+        grid, _dir = (np.rot90(self.__grid,-1), (1,-1)) if vec else (self.__grid, (-1,1))
+        grid[idx] = np.roll(grid[idx], _dir[len(key)>1])
         self.__grid = np.rot90(grid) if vec else grid
+
+        self.__path = [self.__get_revKey(key), *self.__path]
+
+    def empty_path(self) :
+        self.__path = []
 
     @property
     def grid(self) : return self.__grid.tolist()
@@ -103,32 +115,21 @@ class ShiftIt () :
     @property
     def width(self) : return self.__width
     @property
-    def moves(self) :
-        lines = range(0,self.height*2,2)
-        column = range(1,self.width*2, 2)
-        return np.array(["{0} {0}'".format(key).split()
-            for key in [*lines,*column]]).flatten().tolist()
+    def path(self) : return self.__path
+    @property
+    def moves(self) : 
+        return sorted(["{}{}".format(key, "'" if i%2 else '') for i, key in 
+            enumerate([*list(range(0, self.height*2, 2))*2, *list(range(1, self.width*2, 2))*2])])
 # -------------------------------------------------------------------
-def adjacent(x1, y1, x2, y2) : # 1unused
+def adjacent(x1, y1, x2, y2) : # unused
     return x1-x2 in [-1,1] != y1-y2 in [-1,1]
 # -------------------------------------------------------------------
 if __name__ == "__main__":
-    mygame = ShiftIt(5,5)
-    # ---
-    print(f"{mygame}\n{'-'*15}")
+    mygame = ShiftIt(3,5); _sep = f"\n{'-'*15}\n"
     mygame.generate()
-    print(f"{mygame}\n{'-'*15}")
-    # ---
     path_to_success = mygame.shuffle(10)
-    # ---
-    print(f"{mygame}\n{'-'*15}")
-    print(f"# PATH : {path_to_success}\n{'-'*15}")
-    # ---
-    for key in path_to_success :
-        mygame.shift(key)
-        # print(f"{mygame}\n{'-'*15}")
-    # ---
-    print(f"{mygame}\n{'-'*15}")
-    print(mygame.moves)
-
+    moves = mygame.moves
+    print(mygame, f"# MOVES : {moves}", f"# PATH : {path_to_success}", sep=_sep, end=_sep)
+    for key in path_to_success : mygame.shift(key)
+    print(mygame)
 # -------------------------------------------------------------------

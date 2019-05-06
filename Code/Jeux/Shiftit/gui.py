@@ -10,7 +10,6 @@ class GUI ():
         self.__width = width
         self.__length = width * height
         self.__colors = ['yellow', 'red', 'blue', 'green', 'black', 'white']
-        self.path_to_success = []
         # ---
         self.__initialize()
 
@@ -32,7 +31,6 @@ class GUI ():
         # ---
         self.__arrows = dict()
         self.__cellList = []
-        self.__imgCache = []
         # ---
         for i in range((self.__height+2)*(self.__width+2)) :
             x, y = i//(self.__width+2), i%(self.__width+2)
@@ -41,15 +39,12 @@ class GUI ():
                 _dir, idx, key = self.get_idx_dir(x, y)
 
                 if idx is not None :
-                    # _img = ImageTk.PhotoImage(Image.open(
-                    #     f"./img/arrow{_dir}_flat.png").resize((48,48), Image.ANTIALIAS))
                     _img = PhotoImage(file=f"./img/arrow{_dir}_flat.png")
                     _cell = Button(self.__gridFrame, height=50, width=50, 
                         image=_img, relief='flat')
                     _cell.bind('<Button-1>', self.__buttonPress)
                     # ---
-                    self.__arrows[key] = _cell
-                    self.__imgCache.append(_img) # prevent garbage collection
+                    self.__arrows[key] = [_cell, _img] # prevent garbage collection
 
                 else : continue
 
@@ -73,7 +68,7 @@ class GUI ():
             cell['bg'] = self.__colors[self.__core.grid[x][y]]
 
     def __buttonPress(self, event=None) :
-        _k, _w = [(k,w) for k, w in self.__arrows.items() if w == event.widget][0]
+        _k, _w = [(k,w[0]) for k, w in self.__arrows.items() if w[0] == event.widget][0]
         self.__core.shift(_k); self.__update()
 
     def get_idx_dir(self, x, y) :
@@ -87,24 +82,24 @@ class GUI ():
         else : return (None, None, None)
 
     def shuffle(self, n=10) :
-        self.path_to_success = self.__core.shuffle(n)
+        self.__core.shuffle(n)
         self.__update()
 
     def reset(self) :
         self.__core.generate()
-        self.path_to_success = []
         self.__update()
 
     def solveAI(self) : 
         pass
 
     def solve(self) :
-        self.execPath(self.path_to_success)
+        self.execPath(self.__core.path)
+        self.__core.empty_path()
 
     def execPath(self, path=[]) :
         for key in path :
             
-            _arr = self.__arrows[key]
+            _arr = self.__arrows[key][0]
             _dir = ['Up', 'Down'] if int(key[0])%2 else ['Left', 'Right']
             _fileName = [f'./img/arrow{_dir[len(key)>1]}_{state}.png' for state in ['pressed', 'flat']]
             _img_pressed = PhotoImage(file=_fileName[0])
@@ -121,12 +116,10 @@ class GUI ():
             _arr.config(image=_img_flat)
             self.__master.update()
             # ---
-            self.__imgCache.extend([_img_flat, _img_pressed]) # keeps growing, not very cool
-        
-        self.path_to_success = []
+            self.__arrows[key][1] = _img_flat # prevent garbage collection
 # -------------------------------------------------------------------
 if __name__ == "__main__":
     root = Tk()
-    mygui = GUI(root, 3, 5)
+    mygui = GUI(root, 5, 5)
     root.mainloop()
 # -------------------------------------------------------------------
