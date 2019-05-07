@@ -1,9 +1,10 @@
 from keras import Sequential
 from keras.layers import Dense
-from tensorflow.python.estimator import keras
+from tensorflow import keras
 import tensorflow as tf
-from Jeux.Shiftit.shiftit import ShiftIt
+from TER_DeepLearning_L3_MIASHS.Code.Jeux.Shiftit.shiftit import ShiftIt
 from copy import deepcopy
+import numpy as np
 
 
 # pour le moment on choisit :
@@ -14,7 +15,7 @@ max_moves = 10
 colors = [0,1]
 mygame = ShiftIt(5, 5)
 _tmp = mygame.moves
-possible_moves = dict(zip(range(len(tmp)), _tmp))
+possible_moves = dict(zip(range(len(_tmp)), _tmp))
 possible_moves_reverse = {v:k for k,v in possible_moves.items()}
 
 
@@ -123,8 +124,8 @@ model.summary()
 
 tbCallBack = keras.callbacks.TensorBoard(log_dir='/home/jerpint/Dropbox/rubiks/', histogram_freq=0, write_graph=True, write_images=True)
 
-model.fit(steps_per_epoch=50, epochs=num_epochs, verbose=2, validation_data=None,
-          max_queue_size=1, use_multiprocessing=False, workers=6, initial_epoch=0, train_data)
+model.fit(train_data, steps_per_epoch=50, epochs=num_epochs, verbose=2, validation_data=None,
+          max_queue_size=1, use_multiprocessing=False, workers=6, initial_epoch=0)
 loss, acc = model.evaluate(test_data)
 
 print("Loss {}, Accuracy {}".format(loss, acc))
@@ -133,6 +134,6 @@ for j in range(num_epochs):
 
     if (j % 10 == 0):
         print('epoch #', j)
-    model.fit(steps_per_epoch=50,epochs=1, verbose=2, validation_data=None,
+    model.fit(generator=generate_data, steps_per_epoch=50,epochs=1, verbose=2, validation_data=None,
               max_queue_size=1, use_multiprocessing=True,
               workers=6, initial_epoch=0)  # generate_data(8)

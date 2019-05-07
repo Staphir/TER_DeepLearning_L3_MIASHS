@@ -19,6 +19,7 @@ class GUI ():
         self.__length = width * height
         self.__colors = ['orange', 'red', 'blue', 'green', 'black', 'white']
         self.__wd     = './TER_DeepLearning_L3_MIASHS/Code/jeux/Shiftit/'
+        self.__busy = False
         # ---
         self.__initialize()
 
@@ -83,8 +84,13 @@ class GUI ():
         self.__master.update()
 
     def __buttonPress(self, event=None) :
+        if self.__busy : return
+        else : self.__busy = True
+        # ---
         _k, _w = [(k,w[0]) for k, w in self.__arrows.items() if w[0] == event.widget][0]
         self.__core.shift(_k); self.__update()
+        #---
+        self.__busy = False
 
     def get_idx_dir(self, x, y) :
         _mdir = ['Up','Down','Left','Right']
@@ -97,20 +103,39 @@ class GUI ():
         else : return (None, None, None)
 
     def shuffle(self, n=10) :
+        if self.__busy : return
+        else : self.__busy = True
+        # ---
         self.__core.shuffle(n)
         self.__update()
+        # ---
+        self.__busy = False
 
     def reset(self) :
+        if self.__busy : return
+        else : self.__busy = True
+        # ---
         self.__core.generate()
         self.__update()
+        # ---
+        self.__busy = False
 
     def solveAI(self) : 
-        pass
+        if self.__busy : return
+        else : self.__busy = True
+        # ---
+        # ---
+        self.__busy = False
 
     def solve(self) :
+        if self.__busy : return
+        else : self.__busy = True
+        # ---
         try : self.execPath(self.__core.path)
         except Exception : pass # prevent error showing up after closing windows while solving
         self.__core.empty_path()
+        # ---
+        self.__busy = False
 
     def execPath(self, path=[]) :
         for key in path :
