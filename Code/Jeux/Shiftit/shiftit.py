@@ -143,15 +143,15 @@ def adjacent(x1, y1, x2, y2) : # unused
     return x1-x2 in [-1,1] != y1-y2 in [-1,1]
 # -------------------------------------------------------------------
 if __name__ == "__main__":
-    # print(f"Example of use with 3x5 playground :\n{36*'-'}")
-    # mygame = ShiftIt(3,5); 
+    print(f"Example of use with 3x5 playground :\n{36*'-'}")
+    mygame = ShiftIt(3,5) 
     _sep = f"\n{'-'*15}\n"
-    # mygame.generate()
-    # print("# Solved state :", mygame, sep=_sep, end=_sep)
-    # path_to_success = mygame.shuffle(10)
-    # print("# Scrambled state :", mygame, sep=_sep, end=_sep)
-    # moves = mygame.moves
-    # print(f"# MOVES : {moves}", f"# PATH = {path_to_success}", sep=_sep, end=_sep)
-    # for key in path_to_success : mygame.shift(key)
-    # print("# After PATH application :", mygame, sep=_sep, end=_sep)
+    mygame.generate()
+    print("# Solved state :", mygame, sep=_sep, end=_sep)
+    path_to_success = mygame.shuffle(10)
+    print("# Scrambled state :", mygame, sep=_sep, end=_sep)
+    moves = mygame.moves
+    print(f"# MOVES : {moves}", f"# PATH = {path_to_success}", sep=_sep, end=_sep)
+    for key in path_to_success : mygame.shift(key)
+    print("# After PATH application :", mygame, sep=_sep, end=_sep)
 # -------------------------------------------------------------------
