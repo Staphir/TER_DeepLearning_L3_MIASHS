@@ -14,13 +14,14 @@ class ShiftIt () :
         self.__width  = m
         self.__grid   = np.zeros((n, m), int)
         self.__path   = []
+        self.solvedState = []
         # ---
         self.generate()
     
-    def __str__(self) :
-        return '\n'.join(map(str, self.grid))
+    def __str__(self) -> str :
+        return '\n'.join(map(str, self.list_grid))
 
-    def __repr__(self) :
+    def __repr__(self) -> str :
         rep = '<ShiftIt {}x{}>'.format
         return rep(self.height, self.width)
 
@@ -58,7 +59,7 @@ class ShiftIt () :
             in range(self.height) and y+j in range(self.width)
             and self.__grid[x+i,y+j] == color]
  
-    def __get_revKey(self, key:str) :
+    def __get_revKey(self, key:str) -> str :
         return key[0] if len(key)>1 else f"{key}'"
 
     def generate(self) : #c:int) : 
@@ -86,8 +87,10 @@ class ShiftIt () :
                 _seen.append((x,y))
 
             success = self.__check_success()
+        
+        self.solvedState = self.__grid.copy()
 
-    def shuffle(self, n:int) :
+    def shuffle(self, n:int) -> list:
         success = True
 
         while success :
@@ -115,8 +118,14 @@ class ShiftIt () :
     def empty_path(self) :
         self.__path = []
 
+    def reset(self) :
+        self.empty_path()
+        self.__grid = self.solvedState
+
     @property
-    def grid(self, use_np=False) : return self.__grid if use_np else self.__grid.tolist()
+    def list_grid(self) : return self.__grid.tolist()
+    @property
+    def np_grid(self) : return self.__grid
     @property
     def height(self) : return self.__height
     @property
@@ -134,14 +143,15 @@ def adjacent(x1, y1, x2, y2) : # unused
     return x1-x2 in [-1,1] != y1-y2 in [-1,1]
 # -------------------------------------------------------------------
 if __name__ == "__main__":
-    print(f"Example of use with 3x5 playground :\n{36*'-'}")
-    mygame = ShiftIt(3,5); _sep = f"\n{'-'*15}\n"
-    mygame.generate()
-    print("# Solved state :", mygame, sep=_sep, end=_sep)
-    path_to_success = mygame.shuffle(10)
-    print("# Scrambled state :", mygame, sep=_sep, end=_sep)
-    moves = mygame.moves
-    print(f"# MOVES : {moves}", f"# PATH = {path_to_success}", sep=_sep, end=_sep)
-    for key in path_to_success : mygame.shift(key)
-    print("# After PATH application :", mygame, sep=_sep, end=_sep)
+    # print(f"Example of use with 3x5 playground :\n{36*'-'}")
+    # mygame = ShiftIt(3,5); 
+    _sep = f"\n{'-'*15}\n"
+    # mygame.generate()
+    # print("# Solved state :", mygame, sep=_sep, end=_sep)
+    # path_to_success = mygame.shuffle(10)
+    # print("# Scrambled state :", mygame, sep=_sep, end=_sep)
+    # moves = mygame.moves
+    # print(f"# MOVES : {moves}", f"# PATH = {path_to_success}", sep=_sep, end=_sep)
+    # for key in path_to_success : mygame.shift(key)
+    # print("# After PATH application :", mygame, sep=_sep, end=_sep)
 # -------------------------------------------------------------------
