@@ -1,6 +1,7 @@
 # ===================================================================
 # Shift It : A learning Method
 # ===================================================================
+
 __author__  = "Martin Devreese, Maxime Dulieu, Tim Laurençon"
 __version__ = "1.0"
 __date__    = "09/05/2019"
@@ -164,7 +165,7 @@ model.add(Dense(outputl, activation='softmax'))
 
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 
-model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=2) #epoch_nb)
+model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=epoch_nb)
 
 
 

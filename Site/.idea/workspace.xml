@@ -2,34 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c4b655-3899-437b-8ebc-750e43234c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_static/my-styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Code/Jeux/Shiftit/train_shiftit_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/Jeux/Shiftit/train_shiftit_new.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/casse_tete.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/casse_tete.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/librairies.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/librairies.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_sources/casse_tete.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/casse_tete.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_sources/librairies.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/librairies.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/a_propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/a_propos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/bibliographie.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/bibliographie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/casse_tete.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/casse_tete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/genindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/historique.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/historique.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/librairies.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/librairies.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casse_tete.rst" beforeDir="false" afterPath="$PROJECT_DIR$/casse_tete.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librairies.rst" beforeDir="false" afterPath="$PROJECT_DIR$/librairies.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/Deep_Learning_Framework_Power_Scores_2018.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/Deep_Learning_Framework_Power_Scores_2018.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+            <state relative-caret-position="119">
+              <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -225,7 +199,7 @@
       <workItem from="1556741589054" duration="353000" />
       <workItem from="1557066965114" duration="1800000" />
       <workItem from="1557392950646" duration="3966000" />
-      <workItem from="1557408471914" duration="10633000" />
+      <workItem from="1557408471914" duration="10923000" />
     </task>
     <task id="LOCAL-00001" summary="Début texte présentation des librairies et bibliographie">
       <created>1551999412947</created>
@@ -248,28 +222,34 @@
       <option name="project" value="LOCAL" />
       <updated>1557068733101</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Avancée site">
+      <created>1557435153712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557435153712</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50297000" />
+    <option name="totallyTimeSpent" value="50587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16510066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.26203966" />
@@ -287,11 +267,38 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Début texte présentation des librairies et bibliographie" />
     <MESSAGE value="Fusion présentation librairies et recherches librairies + suppression searchBar in navbar" />
     <MESSAGE value="index.html à la racine redirection vers &quot;vrai&quot; index.html (pour la mise en ligne)" />
-    <option name="LAST_COMMIT_MESSAGE" value="index.html à la racine redirection vers &quot;vrai&quot; index.html (pour la mise en ligne)" />
+    <MESSAGE value="Avancée site" />
+    <option name="LAST_COMMIT_MESSAGE" value="Avancée site" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Makefile">
@@ -446,8 +453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="119">
+          <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
         </state>
       </provider>
     </entry>
