@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c4b655-3899-437b-8ebc-750e43234c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_build/doctrees/definition.doctree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_build/html/.doctrees/biblioteques.doctree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_build/html/.doctrees/definition.doctree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_build/html/definition.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/definition.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/bibliographie.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/doctrees/bibliographie.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/casse_tete.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/doctrees/casse_tete.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/_build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/doctrees/librairies.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.buildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/casse_tete.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/casse_tete.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/librairies.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/doctrees/biblioteques.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_sources/casse_tete.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/casse_tete.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/a_propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/a_propos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/bibliographie.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/bibliographie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/casse_tete.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/casse_tete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/genindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/historique.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/historique.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/librairies.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/biblioteques.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_static/my-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/_static/my-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casse_tete.rst" beforeDir="false" afterPath="$PROJECT_DIR$/casse_tete.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librairies.rst" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteques.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -243,7 +210,7 @@
       <workItem from="1557066965114" duration="1800000" />
       <workItem from="1557392950646" duration="3966000" />
       <workItem from="1557408471914" duration="10923000" />
-      <workItem from="1557436815317" duration="3700000" />
+      <workItem from="1557436815317" duration="3950000" />
     </task>
     <task id="LOCAL-00001" summary="Début texte présentation des librairies et bibliographie">
       <created>1551999412947</created>
@@ -280,11 +247,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557437055839</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changement noms fichier librairies -&gt; bibliotèques, justify texte (sauf sidebar) et labels pour les sites des bibliotèques dans la liste">
+      <created>1557440946454</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1557440946454</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54287000" />
+    <option name="totallyTimeSpent" value="54537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -364,7 +338,8 @@
     <MESSAGE value="index.html à la racine redirection vers &quot;vrai&quot; index.html (pour la mise en ligne)" />
     <MESSAGE value="Avancée site" />
     <MESSAGE value="seulement pour la récup du gif" />
-    <option name="LAST_COMMIT_MESSAGE" value="seulement pour la récup du gif" />
+    <MESSAGE value="changement noms fichier librairies -&gt; bibliotèques, justify texte (sauf sidebar) et labels pour les sites des bibliotèques dans la liste" />
+    <option name="LAST_COMMIT_MESSAGE" value="changement noms fichier librairies -&gt; bibliotèques, justify texte (sauf sidebar) et labels pour les sites des bibliotèques dans la liste" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_build/html/_sources/index.rst.txt">
