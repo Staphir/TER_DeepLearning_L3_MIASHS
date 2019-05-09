@@ -258,5 +258,8 @@ epub_title = project
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
 
-
 # -- Extension configuration -------------------------------------------------
+def setup(app):
+    app.add_stylesheet("my-styles.css") # also can be a full URL
+    # app.add_stylesheet("ANOTHER.css")
+    # app.add_stylesheet("AND_ANOTHER.css")
