@@ -1,16 +1,20 @@
 from keras import Sequential
 from keras.layers import Dense
+from sympy.physics.units import action
 from tensorflow import keras
 import tensorflow as tf
-from TER_DeepLearning_L3_MIASHS.Code.Jeux.Shiftit.shiftit import ShiftIt
+# from TER_DeepLearning_L3_MIASHS.Code.Jeux.Shiftit.shiftit import ShiftIt
 from copy import deepcopy
 import numpy as np
-
+from tensorflow.python.keras.utils import to_categorical
+from Jeux.Shiftit.shiftit import ShiftIt
 
 # pour le moment on choisit :
 # une grille 5x5
 # 10 mouvements
 # 2 couleurs
+
+
 max_moves = 10
 colors = [0,1]
 mygame = ShiftIt(5, 5)

@@ -118,8 +118,8 @@ html_theme_options = {
     # an arbitrary url.
     'navbar_links': [
         ("Accueil", "index"),
-        ("Historique", "historique"),
-        ("Librairies python", "librairies"),
+        ("Etat de l'art", "historique"),
+        ("Bibliotèques python", "librairies"),
         ("Notre programme", "casse_tete"),
         ("Bibliographie", "bibliographie"),
         ("A propos", "a_propos"),

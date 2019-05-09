@@ -1,16 +1,26 @@
 import pickle
 from copy import deepcopy
 
+#import Martin
+# from tensorflow.keras.models import Sequential
+# from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
+# from tensorflow.keras.utils import to_categorical
+# from shiftit import ShiftIt
+
+#import Maxime
+from Jeux.Shiftit.shiftit import ShiftIt
+from tensorflow.python.keras.models import Sequential
+from tensorflow.python.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
+from tensorflow.python.keras.utils import to_categorical
+
+# import communs
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
-from tensorflow.keras.utils import to_categorical
 
 
 
-from shiftit import ShiftIt
+
 
 # # pour le moment on choisit :
 # # une grille 5x5
@@ -18,6 +28,7 @@ from shiftit import ShiftIt
 # # 2 couleurs
 
 # --- env vars ---
+
 max_moves = 10
 height, width = 5, 5
 mygame = ShiftIt(height, width)
@@ -36,7 +47,7 @@ def data_generator(game_count=100) : # iterator
 
         # get ready for use game object and path
         game, path = generate_game()
-        
+
         # yield solution list for each game
 
         yield generate_game_data(game, path)
@@ -83,36 +94,38 @@ def generate_game_data(game, path) :
 input_shape = (-1, height, width, 1)
 outputl = len(moves)
 
-epoch_nb = 10
+epoch_nb = 5
 batch_size = 32
 
 
 
 # --- 80 - 20 / train - eval; no need to shuffle data ---
-# train_data_gen = data_generator(10000)
-# eval_data_gen = data_generator(200)
+train_data_gen = data_generator(10000)
+eval_data_gen = data_generator(200)
 
-# X = [] # feature set
-# y = [] # label set
+X = [] # feature set
+y = [] # label set
 
-# for _set in train_data_gen :
-#     for feature, label in _set :
-#         X.append(feature) # feature
-#         y.append(label) # label
+for _set in train_data_gen :
+    for feature, label in _set :
+        X.append(feature) # feature
+        y.append(label) # label
 
-# X = np.array(X).reshape(*input_shape)
-# y = to_categorical(y)
+X = np.array(X).reshape(*input_shape)
+y = to_categorical(y)
 
 
 
 # --- save data to disk to skip generating them again ---
+pickle_out = open("X.pickle", "wb")
 # pickle_out = open("X_stable.pickle", "wb")
-# pickle.dump(X, pickle_out)
-# pickle_out.close()
+pickle.dump(X, pickle_out)
+pickle_out.close()
 
+pickle_out = open("y.pickle", "wb")
 # pickle_out = open("y_stable.pickle", "wb")
-# pickle.dump(y, pickle_out)
-# pickle_out.close()
+pickle.dump(y, pickle_out)
+pickle_out.close()
 
 
 
@@ -128,10 +141,10 @@ y = pickle.load(pickle_in_y)
 
 # --- create the model ---
 model = Sequential()
-model.add(Conv2D(64, kernel_size=(3,3), 
+model.add(Conv2D(64, kernel_size=(3,3),
     input_shape=input_shape[1:], activation='relu'))
-# model.add(Conv2D(128, kernel_size=(3,3), activation='relu'))
-model.add(Conv2D(64, kernel_size=(3,3), activation='relu'))
+model.add(Conv2D(128, kernel_size=(3,3), activation='relu'))
+# model.add(Conv2D(64, kernel_size=(3,3), activation='relu'))
 model.add(Flatten())
 model.add(Dense(128, activation='tanh'))
 model.add(Dropout(0.5))
@@ -143,7 +156,7 @@ model.add(Dense(outputl, activation='softmax'))
 
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 
-model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=2) #epoch_nb)
+model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=epoch_nb)
 
 
 

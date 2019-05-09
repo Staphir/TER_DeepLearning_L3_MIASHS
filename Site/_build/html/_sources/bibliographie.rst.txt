@@ -11,6 +11,10 @@ Tensorflow
 *   `Home <https://www.tensorflow.org>`_
 *   `Tutoriel classification d'images <https://www.tensorflow.org/tutorials/keras/basic_classification>`_
 
+Keras
+*****
+*   `Home <https://keras.io>`_
+
 Pytorch
 *******
 *   `Home <https://pytorch.org/>`_
