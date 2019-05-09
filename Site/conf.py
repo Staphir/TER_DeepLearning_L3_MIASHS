@@ -118,8 +118,8 @@ html_theme_options = {
     # an arbitrary url.
     'navbar_links': [
         ("Accueil", "index"),
-        ("Historique", "historique"),
-        ("Librairies python", "librairies"),
+        ("Etat de l'art", "historique"),
+        ("Bibliotèques python", "librairies"),
         ("Notre programme", "casse_tete"),
         ("Bibliographie", "bibliographie"),
         ("A propos", "a_propos"),
@@ -258,5 +258,8 @@ epub_title = project
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
 
-
 # -- Extension configuration -------------------------------------------------
+def setup(app):
+    app.add_stylesheet("my-styles.css") # also can be a full URL
+    # app.add_stylesheet("ANOTHER.css")
+    # app.add_stylesheet("AND_ANOTHER.css")

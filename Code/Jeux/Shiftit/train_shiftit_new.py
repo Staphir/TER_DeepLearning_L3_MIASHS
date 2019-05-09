@@ -8,15 +8,23 @@ __date__    = "09/05/2019"
 import pickle
 from copy import deepcopy
 
+#import Martin
+# from tensorflow.keras.models import Sequential
+# from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
+# from tensorflow.keras.utils import to_categorical
+# from shiftit import ShiftIt
+
+#import Maxime
+from Jeux.Shiftit.shiftit import ShiftIt
+from tensorflow.python.keras.models import Sequential
+from tensorflow.python.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
+from tensorflow.python.keras.utils import to_categorical
+
+# import communs
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import (Dense, Dropout, Activation, 
-    Flatten, Conv2D, MaxPooling2D)
-from tensorflow.keras.utils import to_categorical
 
-from shiftit import ShiftIt
 # -------------------------------------------------------------------
 # --- env vars ------------------------------------------------------
 _use_saved_data = True
@@ -110,10 +118,10 @@ if not _use_saved_data :
     y = to_categorical(y)
 
     # --- save data to disk to skip generating them again ---
-    if _use_random_playground : 
+    if _use_random_playground :
         pickle_out_X = open("X.pickle", "wb")
         pickle_out_y = open("y.pickle", "wb")
-    else : 
+    else :
         pickle_out_X = open("X_stable.pickle", "wb")
         pickle_out_y = open("y_stable.pickle", "wb")
 
