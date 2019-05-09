@@ -18,13 +18,17 @@ from tensorflow.keras.utils import to_categorical
 
 from shiftit import ShiftIt
 # -------------------------------------------------------------------
-_use_saved_data = True
-_use_random_playground = False
 # --- env vars ------------------------------------------------------
-max_moves = 10
+_use_saved_data = True
+_use_random_playground = True
+max_moves = 5
 height, width = 5, 5
 mygame = ShiftIt(height, width)
 # --- prepare env ---------------------------------------------------
+# config = tf.ConfigProto()
+# config.gpu_options.allow_growth = True
+# config.gpu_options.per_process_gpu_memory_fraction = 0.4
+# session = tf.Session(config=config)
 _tmp = mygame.moves
 moves = dict(zip(range(len(_tmp)), _tmp))
 reverse_moves = {v:k for k,v in moves.items()}
@@ -121,7 +125,6 @@ if not _use_saved_data :
 else :
 
     # --- get data from disk ---
-
     if _use_random_playground : 
         pickle_in_X = open("X.pickle", "rb") # with shiftit.generate()
         pickle_in_y = open("y.pickle", "rb")
@@ -137,13 +140,18 @@ else :
 model = Sequential()
 
 # --- input ---
-model.add(Conv2D(64, kernel_size=(3,3), 
-    input_shape=input_shape[1:], activation='relu'))
+model.add(Conv2D(64, (3,3), input_shape=input_shape[1:], activation='relu'))
+model.add(Activation('relu'))
+# model.add(MaxPooling2D(pool_size=(2,2), dim_ordering="th"))
 
 # --- hidden layers ---
-# model.add(Conv2D(128, kernel_size=(3,3), activation='relu'))
-model.add(Conv2D(64, kernel_size=(3,3), activation='relu'))
+# model.add(Conv2D(64, (3,3), input_shape=input_shape[1:], activation='relu'))
+model.add(Activation('relu'))
+# model.add(MaxPooling2D(pool_size=(2,2), dim_ordering="th"))
+
+model.add(Conv2D(128, kernel_size=(3,3), activation='relu'))
 model.add(Flatten())
+# model.add(Conv2D(64, kernel_size=(3,3), activation='relu'))
 model.add(Dense(128, activation='tanh'))
 
 # --- output ---
@@ -153,7 +161,6 @@ model.add(Dense(outputl, activation='softmax'))
 
 
 # --- compile and run training ---
-
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 
 model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=epoch_nb)
@@ -161,6 +168,5 @@ model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=epoch_nb)
 
 
 # --- saving the model ---
-
 # model.save('shifit_model.h5')  # creates a HDF5 file 'my_model.h5'
 # model.save('shifit_model_stable.h5')  # creates a HDF5 file 'my_model.h5'
