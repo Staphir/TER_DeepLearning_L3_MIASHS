@@ -18,7 +18,8 @@ class GUI ():
         self.__width = width
         self.__length = width * height
         self.__colors = ['orange', 'red', 'blue', 'green', 'black', 'white']
-        self.__wd     = './TER_DeepLearning_L3_MIASHS/Code/jeux/Shiftit/'
+        # self.__wd     = './TER_DeepLearning_L3_MIASHS/Code/jeux/Shiftit/'
+        self.__wd     = './'
         self.__busy = False
         # ---
         self.__initialize()
@@ -79,7 +80,7 @@ class GUI ():
         for i in range(self.__length) :
             x, y = i//self.__width, i%self.__width
             cell = self.__cellList[i]
-            cell['bg'] = self.__colors[self.__core.grid[x][y]]
+            cell['bg'] = self.__colors[self.__core.list_grid[x][y]]
         self.__successVar.set(str(self.__core.state))
         self.__master.update()
 
