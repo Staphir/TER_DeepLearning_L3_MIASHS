@@ -1,3 +1,10 @@
+# ===================================================================
+# Shift It : A learning Method
+# ===================================================================
+__author__  = "Martin Devreese, Maxime Dulieu, Tim Laurençon"
+__version__ = "1.0"
+__date__    = "09/05/2019"
+# -------------------------------------------------------------------
 import pickle
 from copy import deepcopy
 
@@ -18,27 +25,18 @@ import numpy as np
 import tensorflow as tf
 from tensorflow import keras
 
-
-
-
-
-# # pour le moment on choisit :
-# # une grille 5x5
-# # 10 mouvements
-# # 2 couleurs
-
-# --- env vars ---
-
+# -------------------------------------------------------------------
+_use_saved_data = True
+_use_random_playground = False
+# --- env vars ------------------------------------------------------
 max_moves = 10
 height, width = 5, 5
 mygame = ShiftIt(height, width)
-
-# --- prepare env ---
+# --- prepare env ---------------------------------------------------
 _tmp = mygame.moves
 moves = dict(zip(range(len(_tmp)), _tmp))
 reverse_moves = {v:k for k,v in moves.items()}
-
-# --- define data generating methods ---
+# --- define data generating methods --------------------------------
 def data_generator(game_count=100) : # iterator
     # set iteration number
     _iter = 0
@@ -47,25 +45,28 @@ def data_generator(game_count=100) : # iterator
 
         # get ready for use game object and path
         game, path = generate_game()
-
+        
         # yield solution list for each game
 
         yield generate_game_data(game, path)
 
         _iter +=1
-
+# -------------------------------------------------------------------
 def generate_game() :
-    # generate random playground
-    mygame.generate()
-    # or reset to learn on exact same starting pattern
-    # would be nice to try out if no result with random patterns
-    # mygame.reset()
+
+    if _use_random_playground :
+        # generate random playground
+        mygame.generate()
+    else :
+        # or reset to learn on exact same starting pattern
+        # would be nice to try out if no result with random patterns
+        mygame.reset()
 
     # shuffle playground and get path to success
     path_to_success = mygame.shuffle(max_moves)
 
     return deepcopy(mygame), path_to_success
-
+# -------------------------------------------------------------------
 def generate_game_data(game, path) :
     # grid x next_step_to_solution
     _solList = []
@@ -87,66 +88,73 @@ def generate_game_data(game, path) :
 
     # send back each resolution step
     return _solList
-
-
-
-# --- building model ---
+# --- building model ------------------------------------------------
 input_shape = (-1, height, width, 1)
 outputl = len(moves)
 
-epoch_nb = 5
+epoch_nb = 10
 batch_size = 32
 
 
+if not _use_saved_data :
 
-# --- 80 - 20 / train - eval; no need to shuffle data ---
-train_data_gen = data_generator(10000)
-eval_data_gen = data_generator(200)
+    # --- 80 - 20 / train - eval; no need to shuffle data ---
+    train_data_gen = data_generator(10000)
+    eval_data_gen = data_generator(200)
 
-X = [] # feature set
-y = [] # label set
+    X = [] # feature set
+    y = [] # label set
 
-for _set in train_data_gen :
-    for feature, label in _set :
-        X.append(feature) # feature
-        y.append(label) # label
+    for _set in train_data_gen :
+        for feature, label in _set :
+            X.append(feature) # feature
+            y.append(label) # label
 
-X = np.array(X).reshape(*input_shape)
-y = to_categorical(y)
+    X = np.array(X).reshape(*input_shape)
+    y = to_categorical(y)
 
+    # --- save data to disk to skip generating them again ---
+    if _use_random_playground :
+        pickle_out_X = open("X.pickle", "wb")
+        pickle_out_y = open("y.pickle", "wb")
+    else :
+        pickle_out_X = open("X_stable.pickle", "wb")
+        pickle_out_y = open("y_stable.pickle", "wb")
 
+    pickle.dump(X, pickle_out_X)
+    pickle_out_X.close()
+    pickle.dump(y, pickle_out_y)
+    pickle_out_y.close()
 
-# --- save data to disk to skip generating them again ---
-pickle_out = open("X.pickle", "wb")
-# pickle_out = open("X_stable.pickle", "wb")
-pickle.dump(X, pickle_out)
-pickle_out.close()
+else :
 
-pickle_out = open("y.pickle", "wb")
-# pickle_out = open("y_stable.pickle", "wb")
-pickle.dump(y, pickle_out)
-pickle_out.close()
+    # --- get data from disk ---
 
-
-
-# --- get data from disk ---
-pickle_in_X = open("X.pickle", "rb") # with shiftit.generate()
-pickle_in_y = open("y.pickle", "rb")
-# pickle_in_X = open("X_stable.pickle", "rb") # with shiftit.reset()
-# pickle_in_y = open("y_stable.pickle", "rb")
-X = pickle.load(pickle_in_X)
-y = pickle.load(pickle_in_y)
+    if _use_random_playground :
+        pickle_in_X = open("X.pickle", "rb") # with shiftit.generate()
+        pickle_in_y = open("y.pickle", "rb")
+    else :
+        pickle_in_X = open("X_stable.pickle", "rb") # with shiftit.reset()
+        pickle_in_y = open("y_stable.pickle", "rb")
+    X = pickle.load(pickle_in_X)
+    y = pickle.load(pickle_in_y)
 
 
 
 # --- create the model ---
 model = Sequential()
+
+# --- input ---
 model.add(Conv2D(64, kernel_size=(3,3),
     input_shape=input_shape[1:], activation='relu'))
-model.add(Conv2D(128, kernel_size=(3,3), activation='relu'))
-# model.add(Conv2D(64, kernel_size=(3,3), activation='relu'))
+
+# --- hidden layers ---
+# model.add(Conv2D(128, kernel_size=(3,3), activation='relu'))
+model.add(Conv2D(64, kernel_size=(3,3), activation='relu'))
 model.add(Flatten())
 model.add(Dense(128, activation='tanh'))
+
+# --- output ---
 model.add(Dropout(0.5))
 model.add(Dense(outputl, activation='softmax'))
 
@@ -156,7 +164,7 @@ model.add(Dense(outputl, activation='softmax'))
 
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 
-model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=epoch_nb)
+model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=2) #epoch_nb)
 
 
 

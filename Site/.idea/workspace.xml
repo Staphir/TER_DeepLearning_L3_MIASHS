@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c4b655-3899-437b-8ebc-750e43234c53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Code/.idea/Code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/.idea/Code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/Jeux/Shiftit/X.pickle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Code/Jeux/Shiftit/train_shiftit_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/Jeux/Shiftit/train_shiftit_new.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/Jeux/Shiftit/y.pickle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/Tensorflow/train_shiftit.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/Tensorflow/train_shiftit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.buildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/bibliographie.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/bibliographie.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/librairies.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/librairies.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_sources/bibliographie.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/bibliographie.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_sources/librairies.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/librairies.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/a_propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/a_propos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/bibliographie.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/bibliographie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/casse_tete.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/casse_tete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/genindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/historique.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/historique.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/librairies.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/librairies.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bibliographie.rst" beforeDir="false" afterPath="$PROJECT_DIR$/bibliographie.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/librairies.rst" beforeDir="false" afterPath="$PROJECT_DIR$/librairies.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +194,7 @@
       <workItem from="1555070661430" duration="3463000" />
       <workItem from="1556741589054" duration="353000" />
       <workItem from="1557066965114" duration="1800000" />
-      <workItem from="1557392950646" duration="3744000" />
+      <workItem from="1557392950646" duration="3966000" />
     </task>
     <task id="LOCAL-00001" summary="Début texte présentation des librairies et bibliographie">
       <created>1551999412947</created>
@@ -249,7 +221,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39442000" />
+    <option name="totallyTimeSpent" value="39664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
