@@ -1,7 +1,12 @@
 *{
     text-align: justify;
+    background-color: #0aaaf1;
 }
 
 .reference{
     text-align: left;
+}
+
+.sidebarFixedLinks{
+    padding-left: 5px;
 }

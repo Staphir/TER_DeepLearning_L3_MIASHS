@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1802d66c-147b-4e94-b09f-6993ce9505c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Site/_build/doctrees/definition.doctree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Site/_build/html/.doctrees/biblioteques.doctree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Site/_build/html/.doctrees/definition.doctree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Site/_build/html/definition.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Site/definition.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Site/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/doctrees/bibliographie.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/doctrees/bibliographie.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/doctrees/casse_tete.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/doctrees/casse_tete.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/doctrees/librairies.doctree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/.buildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/.doctrees/casse_tete.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/.doctrees/casse_tete.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/.doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/.doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/.doctrees/index.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/.doctrees/librairies.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/doctrees/biblioteques.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/_sources/casse_tete.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/_sources/casse_tete.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/_sources/index.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/a_propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/a_propos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/bibliographie.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/bibliographie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/casse_tete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/casse_tete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/genindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/historique.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/historique.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/librairies.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/biblioteques.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/objects.inv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/_static/my-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_static/my-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/casse_tete.rst" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/casse_tete.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Site/librairies.rst" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/biblioteques.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -319,6 +286,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13557047" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

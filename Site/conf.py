@@ -121,8 +121,6 @@ html_theme_options = {
         ("Etat de l'art", "historique"),
         ("Bibliotèques python", "biblioteques"),
         ("Notre programme", "casse_tete"),
-        ("Bibliographie", "bibliographie"),
-        ("A propos", "a_propos"),
     ],
 
     # Render the next and previous page links in navbar. (Default: true)

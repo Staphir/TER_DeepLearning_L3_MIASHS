@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c4b655-3899-437b-8ebc-750e43234c53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/definitions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/biblioteques.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/doctrees/biblioteques.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/definition.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/doctrees/definition.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/_build/doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/doctrees/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.buildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/_static/my-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_static/my-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/a_propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/a_propos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/bibliographie.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/bibliographie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/biblioteques.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/biblioteques.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/casse_tete.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/casse_tete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/definition.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/definition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/genindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/historique.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/historique.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/objects.inv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/searchindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_static/my-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/_static/my-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/_templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,15 +34,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Site$sphinx_task_in_.coverage" NAME="sphinx task in  Coverage Results" MODIFIED="1557440244270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Site$sphinx_task_in_.coverage" NAME="sphinx task in  Coverage Results" MODIFIED="1557497254561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="123" column="43" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
+            <state relative-caret-position="290">
+              <caret line="260" column="37" selection-start-line="260" selection-start-column="37" selection-end-line="260" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -27,8 +50,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_build/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-748">
-              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="18">
+              <caret line="171" column="31" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
+              <folding>
+                <element signature="e#9792#9798#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,20 +65,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bibliographie.rst">
-          <provider selected="true" editor-type-id="restructured-text-editor" />
+        <entry file="file://$PROJECT_DIR$/_templates/layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="86">
+              <caret line="14" column="35" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="35" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/biblioteques.rst">
+        <entry file="file://$PROJECT_DIR$/definitions.rst">
           <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_static/my-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <state relative-caret-position="17">
+              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -95,13 +125,14 @@
         <option value="$PROJECT_DIR$/bibliographie.rst" />
         <option value="$PROJECT_DIR$/../../index.html" />
         <option value="$PROJECT_DIR$/librairies.rst" />
-        <option value="$PROJECT_DIR$/_templates/layout.html" />
         <option value="$PROJECT_DIR$/casse_tete.rst" />
         <option value="$PROJECT_DIR$/definition.rst" />
         <option value="$PROJECT_DIR$/index.rst" />
-        <option value="$PROJECT_DIR$/conf.py" />
-        <option value="$PROJECT_DIR$/_static/my-styles.css" />
         <option value="$PROJECT_DIR$/biblioteques.rst" />
+        <option value="$PROJECT_DIR$/_build/html/index.html" />
+        <option value="$PROJECT_DIR$/_templates/layout.html" />
+        <option value="$PROJECT_DIR$/_static/my-styles.css" />
+        <option value="$PROJECT_DIR$/conf.py" />
       </list>
     </option>
   </component>
@@ -133,7 +164,8 @@
             <path>
               <item name="Site" type="b2602c69:ProjectViewProjectNode" />
               <item name="Site" type="462c0819:PsiDirectoryNode" />
-              <item name="_static" type="462c0819:PsiDirectoryNode" />
+              <item name="_build" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -210,7 +242,9 @@
       <workItem from="1557066965114" duration="1800000" />
       <workItem from="1557392950646" duration="3966000" />
       <workItem from="1557408471914" duration="10923000" />
-      <workItem from="1557436815317" duration="3950000" />
+      <workItem from="1557436815317" duration="4368000" />
+      <workItem from="1557476019473" duration="826000" />
+      <workItem from="1557491686189" duration="4699000" />
     </task>
     <task id="LOCAL-00001" summary="Début texte présentation des librairies et bibliographie">
       <created>1551999412947</created>
@@ -254,25 +288,42 @@
       <option name="project" value="LOCAL" />
       <updated>1557440946454</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add au git tous les fichiers manquants">
+      <created>1557441098163</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1557441098163</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54537000" />
+    <option name="totallyTimeSpent" value="60480000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1671141" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17114094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -339,7 +390,8 @@
     <MESSAGE value="Avancée site" />
     <MESSAGE value="seulement pour la récup du gif" />
     <MESSAGE value="changement noms fichier librairies -&gt; bibliotèques, justify texte (sauf sidebar) et labels pour les sites des bibliotèques dans la liste" />
-    <option name="LAST_COMMIT_MESSAGE" value="changement noms fichier librairies -&gt; bibliotèques, justify texte (sauf sidebar) et labels pour les sites des bibliotèques dans la liste" />
+    <MESSAGE value="add au git tous les fichiers manquants" />
+    <option name="LAST_COMMIT_MESSAGE" value="add au git tous les fichiers manquants" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_build/html/_sources/index.rst.txt">
@@ -435,30 +487,10 @@
     <entry file="file://$PROJECT_DIR$/pictures/ShiftIt_GUI2.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/casse_tete.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/definition.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_build/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliographie.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/make.bat">
@@ -468,13 +500,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="123" column="43" selection-start-line="123" selection-start-column="43" selection-end-line="123" selection-end-column="43" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_build/html/.buildinfo">
       <provider selected="true" editor-type-id="text-editor" />
@@ -489,13 +514,6 @@
     <entry file="file://$PROJECT_DIR$/_build/html/definition.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1223" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_static/my-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_build/html/_static/jquery-3.2.1.js">
@@ -514,7 +532,47 @@
     <entry file="file://$PROJECT_DIR$/_build/html/_static/js/jquery-fix.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/_build/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="171" column="31" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
+          <folding>
+            <element signature="e#9792#9798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_static/my-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="260" column="37" selection-start-line="260" selection-start-column="37" selection-end-line="260" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/biblioteques.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliographie.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/definitions.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>
