@@ -1,0 +1,30 @@
+﻿Deep Learning Library Power Scores,,,,,,,,,,,,,,,,,,,,,
+Jeff Hale,,,,,,,,,,,,,,,,,,,,,
+,Online Job Listings,,,,,KDnuggets  ,Google ,Medium  ,Amazon  ,ArXiv ,GitHub Activity,,,,,,,,,,
+Framework,Indeed,Monster,Simply Hired,LinkedIn,Angel List,Usage Survey,Search Volume,Articles,Books,Articles,Stars,Watchers,Forks,Contributors,Medium Tags ,Person/Organization Most Associated With,Released,Latest Version,URL,Github Repo,Quora Topic Followers
+"TensorFlow,""2,079"",""1,253"",""1,582"",""2,610"",552,29.90%,73,""6,200"",202,""3,700"",""109,576"",""8,334"",""67,551"",""1,642"",""2,300"",Google,2015,1.11.0,https://www.tensorflow.org/,https://github.com/tensorflow/tensorflow,""38,000"""
+"Keras,684,364,449,695,177,22.20%,53,""9,120"",79,""1,390"",""33,558"",""1,847"",""12,658"",719,606,FranÃ§ois Chollet,2015,2.2.0,https://keras.io/,https://github.com/keras-team/keras,""8,000"""
+"PyTorch,486,309,428,665,120,6.40%,19,""1,780"",18,""1,560"",""18,716"",952,""4,474"",760,257,Facebook,2016,0.4.1,https://pytorch.org/,https://github.com/pytorch/pytorch,""4,800"""
+"Caffe,607,399,515,866,123,1.50%,4,815,14,""1,360"",""25,604"",""2,218"",""15,633"",270,76,Berkeley Vision and Learning Center,2014,1.0.0,http://caffe.berkeleyvision.org/,https://github.com/BVLC/caffe,""5,200"""
+"Theano,356,316,279,508,95,4.90%,0,428,17,652,""8,477"",585,""2,447"",328,14,""MILA, U Montreal"",2007,1.0.2,www.deeplearning.net/software/theano/,https://github.com/Theano/Theano,""6,400"""
+"MXNET,266,154,200,298,29,1.50%,2,524,32,260,""15,200"",""1,170"",""5,498"",587,55,Apache,2015,1.3.0,https://mxnet.apache.org/,https://github.com/apache/incubator-mxnet,192"
+"CNTK,126,96,97,160,12,3.00%,0,223,1,88,""15,106"",""1,368"",""4,029"",189,16,Microsoft,2016,2.5.1,https://github.com/Microsoft/CNTK,https://github.com/Microsoft/CNTK,72"
+"DeepLearning4J,17,5,9,35,3,3.40%,2,70,11,27,""9,615"",829,""4,441"",232,0,Adam Gibson,2014,1.0.0,https://deeplearning4j.org/,https://github.com/deeplearning4j/deeplearning4j,158"
+"Caffe2,55,51,49,109,12,1.20%,2,335,2,67,""8,284"",577,""2,102"",193,11,Facebook,2017,,https://caffe2.ai/,https://github.com/pytorch/pytorch/,142"
+"Chainer,19,19,19,28,3,0.00%,2,91,3,164,""4,128"",325,""1,095"",182,19,Preferred Networks,2015,5.0.0,https://chainer.org/,https://github.com/chainer/chainer,10"
+"FastAI,0,0,0,0,0,0.00%,0,858,0,11,""7,268"",432,""2,647"",195,0,Jeremy Howard,2017,0.7.0,http://www.fast.ai/,https://github.com/fastai/fastai,0"
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+"Notes:  Searches performed Sept 16, except for frameworks in white performed Sept. 20.,Source: Searches on respective websites. USA. Search: machine learning [library name] ,,,,,""Source: KDnuggets.com KDnuggets 2018 Poll: "
+What Analytics, Big Data, Data Science, Machine Learning software you used in the past 12 months for a real project? 
+"International. MXNET, CNTK, Theano all saw drops since 2017."",""Source: Google Trends. All include TensorFlow. Location = USA. See article graphic. Sept 15 data. Past 12 months. Data change if change time period. This is relative to each other for past week when scale is past 12 months. DeepLearning4J, Caffe learning & Chainer actual readiings """"<1"""".  Used """"Caffe Learning"""" because Caffe too broad."",""Google site search of Medium.com for past 12 months with framework + """"learning"""" as search term. Performed Sept. 21."",Source: Amazon searches on Amazon.com Amazon: Books->Computers & Technology,Source: Google site search framework name and pdf file type of arXiv.org over past 12 months. Conducted Sept. 21.  ,Source: GitHub observations. Caffe2 uses pre-PyTorch-merged GitHub data.,,,,Source: Medium when add tag to article. Not in power score.,,,,,,""Added Sept 20, not in power score."""
+Goes with Medium Aricle: ,,,https://towardsdatascience.com/deep-learning-framework-power-scores-2018-23607ddf297a,,,,,,,,,,,,,,,,,,
+Goes with Kaggle Kernel:,,,https://www.kaggle.com/discdiver/deep-learning-framework-power-scores-2018,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,caffe 0 was Dec. 2013,,,,
+,,,,,,,,,,,,,,,,,,,,caffe2 source code now lives at pytorch repo,

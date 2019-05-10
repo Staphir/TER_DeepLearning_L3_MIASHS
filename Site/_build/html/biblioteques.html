@@ -49,8 +49,6 @@
                 <li><a href="historique.html">Etat de l'art</a></li>
                 <li><a href="#">Bibliotèques python</a></li>
                 <li><a href="casse_tete.html">Notre programme</a></li>
-                <li><a href="bibliographie.html">Bibliographie</a></li>
-                <li><a href="a_propos.html">A propos</a></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -125,38 +123,37 @@
 <h2>Numpy<a class="headerlink" href="#numpy" title="Lien permanent vers ce titre">¶</a></h2>
 <p><strong>Description</strong></p>
 <p>Bibliotèques contenant plusieurs “outils” scientifiques notamment des tableaux multi-dimensionnels (numpy.array)
-et des fonctions d’affichages graphiques (images, graphique…)
-<a class="reference external" href="http://www.numpy.org/">http://www.numpy.org/</a></p>
+et des fonctions d’affichages graphiques (images, graphique…)</p>
+<p><a class="reference external" href="http://www.numpy.org/">source</a></p>
 </div>
 <div class="section" id="theano">
 <h2>Theano<a class="headerlink" href="#theano" title="Lien permanent vers ce titre">¶</a></h2>
 <p><strong>Description</strong></p>
-<p>LA “sous-couche” des autres bibliotèques d’apprentissages de réseaux de neurones. Comme tous les autres utilise des Numpy.arrays
-<a class="reference external" href="http://deeplearning.net/software/theano/index.html">http://deeplearning.net/software/theano/index.html</a>
-Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently.</p>
+<p>LA “sous-couche” des autres bibliotèques d’apprentissages de réseaux de neurones. Comme tous les autres utilise des Numpy.arrays</p>
+<p><a class="reference external" href="http://deeplearning.net/software/theano/index.html">source</a></p>
 </div>
 <div class="section" id="pytorch">
 <h2>Pytorch<a class="headerlink" href="#pytorch" title="Lien permanent vers ce titre">¶</a></h2>
 <p><strong>Description</strong></p>
 <p>Une des plus complètes des bibliotèques de Deep-Learning. Elle est complexe mais permet une grande flexibilité
-et une personnalisation approfondie une fois les compétences acquises.
-<a class="reference external" href="https://pytorch.org/">https://pytorch.org/</a></p>
+et une personnalisation approfondie une fois les compétences acquises.</p>
+<p><a class="reference external" href="https://pytorch.org/">source</a></p>
 </div>
 <div class="section" id="keras">
 <h2>Keras<a class="headerlink" href="#keras" title="Lien permanent vers ce titre">¶</a></h2>
 <p><strong>Description</strong></p>
 <p>Sûrement la bibliotèque python la plus aimé car elle est simple d’utilisation sans pour autant brider les possibilités de programmation.
 Seul point faible, la personnalisation est difficile à mettre en place.
-Elle se programme sous forme de blocs, ce qui fait sa simplicité et réduit la longueur du code.
-<a class="reference external" href="https://keras.io/">https://keras.io/</a></p>
+Elle se programme sous forme de blocs, ce qui fait sa simplicité et réduit la longueur du code.</p>
+<p><a class="reference external" href="https://keras.io/">source</a></p>
 </div>
 <div class="section" id="tensorflow">
 <h2>TensorFlow<a class="headerlink" href="#tensorflow" title="Lien permanent vers ce titre">¶</a></h2>
 <p><strong>Description</strong></p>
 <p>TensorFlow est une bibliotèque open source développée  par une équipe de Google (Google Brain Team). Elle n’est pas seulement
 utilisée par Google mais par beaucoup d’autres grandes entreprises(Twitter, Coca-Cola, Airbus…). Cette bibliotèque
-peut-être utilisée pour plusieurs plateformes (ordinateurs, telephones, internet et cloud).
-<a class="reference external" href="https://www.tensorflow.org">https://www.tensorflow.org</a></p>
+peut-être utilisée pour plusieurs plateformes (ordinateurs, telephones, internet et cloud).</p>
+<p><a class="reference external" href="https://www.tensorflow.org">source</a></p>
 </div>
 </div>
 <div class="section" id="comparaison-de-differentes-biblioteques">
@@ -174,8 +171,43 @@ de critères tels que la fréquence de recherche google, l’activité GitHub ou
       
   </div>
 </div>
-  <!--<h2>My footer of awesomeness.</h2>-->
-  
+<!--Add in sidebar after search-->
+<script>
+    let sidebar = document.getElementById("sidebar");
+    // Definitions
+    let aDef = document.createElement("a");
+    let aDefText = document.createTextNode("Définitions");
+    aDef.appendChild(aDefText);
+    aDef.id = "sidebarDefinitions";
+    aDef.class = "sidebarFixedLinks";
+    aDef.href = "definitions.html";
+    sidebar.appendChild(aDef);
+
+    let br1 = document.createElement("BR");
+    sidebar.appendChild(br1);
+
+    // Bibliographie
+    let aBiblio = document.createElement("a");
+    let aBiblioText = document.createTextNode("Bibliographie");
+    aBiblio.appendChild(aBiblioText);
+    aBiblio.id = "sidebarBibliographie";
+    aDef.class = "sidebarFixedLinks";
+    aBiblio.href = "bibliographie.html";
+    sidebar.appendChild(aBiblio);
+
+    let br2 = document.createElement("BR");
+    sidebar.appendChild(br2);
+
+    // A propos
+    let aProp = document.createElement("a");
+    let aPropText = document.createTextNode("A propos");
+    aProp.appendChild(aPropText);
+    aProp.id = "sidebarPropos";
+    aDef.class = "sidebarFixedLinks";
+    aProp.href = "a_propos.html";
+    sidebar.appendChild(aProp)
+</script>
+
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
@@ -184,7 +216,7 @@ de critères tels que la fréquence de recherche google, l’activité GitHub ou
         <br/>
         
 <div id="sourcelink">
-  <a href="_sources/librairies.rst.txt"
+  <a href="_sources/biblioteques.rst.txt"
      rel="nofollow">Source</a>
 </div>
       

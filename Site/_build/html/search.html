@@ -55,10 +55,8 @@
             
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="historique.html">Etat de l'art</a></li>
-                <li><a href="librairies.html">Bibliotèques python</a></li>
+                <li><a href="biblioteques.html">Bibliotèques python</a></li>
                 <li><a href="casse_tete.html">Notre programme</a></li>
-                <li><a href="bibliographie.html">Bibliographie</a></li>
-                <li><a href="a_propos.html">A propos</a></li>
             
             
               <li class="dropdown globaltoc-container">
@@ -127,8 +125,43 @@ contenant moins de mots n'apparaîtront pas dans la liste des résultats.
       
   </div>
 </div>
-  <!--<h2>My footer of awesomeness.</h2>-->
-  
+<!--Add in sidebar after search-->
+<script>
+    let sidebar = document.getElementById("sidebar");
+    // Definitions
+    let aDef = document.createElement("a");
+    let aDefText = document.createTextNode("Définitions");
+    aDef.appendChild(aDefText);
+    aDef.id = "sidebarDefinitions";
+    aDef.class = "sidebarFixedLinks";
+    aDef.href = "definitions.html";
+    sidebar.appendChild(aDef);
+
+    let br1 = document.createElement("BR");
+    sidebar.appendChild(br1);
+
+    // Bibliographie
+    let aBiblio = document.createElement("a");
+    let aBiblioText = document.createTextNode("Bibliographie");
+    aBiblio.appendChild(aBiblioText);
+    aBiblio.id = "sidebarBibliographie";
+    aDef.class = "sidebarFixedLinks";
+    aBiblio.href = "bibliographie.html";
+    sidebar.appendChild(aBiblio);
+
+    let br2 = document.createElement("BR");
+    sidebar.appendChild(br2);
+
+    // A propos
+    let aProp = document.createElement("a");
+    let aPropText = document.createTextNode("A propos");
+    aProp.appendChild(aPropText);
+    aProp.id = "sidebarPropos";
+    aDef.class = "sidebarFixedLinks";
+    aProp.href = "a_propos.html";
+    sidebar.appendChild(aProp)
+</script>
+
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
