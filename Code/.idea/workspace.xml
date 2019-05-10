@@ -2,7 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1802d66c-147b-4e94-b09f-6993ce9505c4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Site/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/doctrees/definition.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/.buildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/.doctrees/biblioteques.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/.doctrees/biblioteques.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/.doctrees/definition.doctree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/.doctrees/definitions.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/.doctrees/definitions.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/.doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/.doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/.doctrees/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/_sources/biblioteques.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/_sources/biblioteques.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/_sources/definition.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/_sources/definitions.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/_sources/definitions.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/_sources/index.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/_static/my-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/_static/my-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/a_propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/a_propos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/bibliographie.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/bibliographie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/biblioteques.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/biblioteques.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/casse_tete.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/casse_tete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/definition.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/definitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/definitions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/genindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/historique.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/historique.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/objects.inv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_build/html/searchindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_static/my-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_static/my-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/_templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/_templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/biblioteques.rst" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/biblioteques.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/definition.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/definitions.rst" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/definitions.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Site/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/../Site/index.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +55,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Jeux/Shiftit/shiftit.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
+                <state relative-caret-position="153">
                   <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#347#365#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -35,8 +64,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Jeux/Shiftit/train_shiftit_new.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+                <state relative-caret-position="168">
+                  <caret line="151" column="61" selection-start-line="151" selection-start-column="61" selection-end-line="151" selection-end-column="61" />
+                  <folding>
+                    <element signature="e#351#364#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -48,10 +80,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Jeux/Shiftit/shiftit.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="219">
-                  <caret line="137" column="12" selection-start-line="137" selection-start-column="12" selection-end-line="137" selection-end-column="12" />
+                <state relative-caret-position="202">
+                  <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
                   <folding>
-                    <element signature="e#347#365#0" expanded="true" />
+                    <element signature="e#377#395#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -60,7 +92,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Jeux/Shiftit/gui.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1870">
+                <state relative-caret-position="947">
                   <caret line="114" column="21" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
                   <folding>
                     <element signature="e#347#416#0" expanded="true" />
@@ -99,10 +131,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1380" />
-    <option name="height" value="740" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -253,8 +284,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.gui" />
-      <item itemvalue="Python.train_shiftit_new" />
       <item itemvalue="Python.shiftit" />
+      <item itemvalue="Python.train_shiftit_new" />
     </list>
     <recent_temporary>
       <list>
@@ -278,17 +309,18 @@
       <workItem from="1557395293647" duration="4161000" />
       <workItem from="1557403898124" duration="2520000" />
       <workItem from="1557436824915" duration="687000" />
+      <workItem from="1557500312998" duration="1629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26666000" />
+    <option name="totallyTimeSpent" value="28295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13557047" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.110738255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -370,19 +402,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jeux/Shiftit/shiftit.py">
+    <entry file="file://$PROJECT_DIR$/Jeux/Shiftit/train_shiftit_new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="168">
+          <caret line="151" column="61" selection-start-line="151" selection-start-column="61" selection-end-line="151" selection-end-column="61" />
           <folding>
-            <element signature="e#347#365#0" expanded="true" />
+            <element signature="e#351#364#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Jeux/Shiftit/gui.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
+        <state relative-caret-position="947">
           <caret line="114" column="21" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
           <folding>
             <element signature="e#347#416#0" expanded="true" />
@@ -390,10 +422,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jeux/Shiftit/train_shiftit_new.py">
+    <entry file="file://$PROJECT_DIR$/Jeux/Shiftit/shiftit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="202">
+          <caret line="104" column="26" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
+          <folding>
+            <element signature="e#377#395#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

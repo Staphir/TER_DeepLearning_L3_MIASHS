@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>&lt;no title&gt; &#8212; Documentation TER_DeepLearning </title>
+    <title>Définitions importantes &#8212; Documentation TER_DeepLearning </title>
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-styles.css" />
@@ -47,6 +47,7 @@
             
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="historique.html">Etat de l'art</a></li>
+                <li><a href="#">Définitions</a></li>
                 <li><a href="biblioteques.html">Bibliotèques python</a></li>
                 <li><a href="casse_tete.html">Notre programme</a></li>
             
@@ -86,7 +87,8 @@
 <div class="container">
   <div class="row">
       <div class="col-md-3">
-        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="simple">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Définitions importantes</a></li>
 </ul>
 
 <form action="search.html" method="get">
@@ -100,7 +102,34 @@
       </div>
     <div class="col-md-9 content">
       
-  
+  <div class="section" id="definitions-importantes">
+<h1>Définitions importantes<a class="headerlink" href="#definitions-importantes" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<hr class="docutils" />
+<p>Certains termes et notions utilisés couramment en réseaux de neurones (Neural Network - NN) nécessitent d’être définis pour continuer au travers de ce projet.
+La plupart du temps ce sont des termes qui dérivent de l’anglais ou alors des notions relativement simples mais qui méritent d’être explicitées.</p>
+<ul class="simple">
+<li><strong>Le dataset</strong> : L’ensemble des données que l’on va utiliser pour tester / entraîner notre NN.
+Il est généralement divisé en 2 parties qui sont d’une part les données d’entraînement (Les training data qui servent à l’apprentissage du NN)
+et d’autre part les données de test (Les test data qui servent à vérifier le fonctionnement du NN) qui ne sont pas comprises dans les données d’entraînement.</li>
+</ul>
+<ul class="simple">
+<li><strong>Rétropropagation</strong> : Fonction permettant d’adapter la solution suivant les résultats obtenus durant le passage dans le réseau.
+Avoir plusieurs passages (et donc plusieurs renvoies de la fonction de rétropropagation) permet au système de plus en plus tendre vers la vérité.</li>
+</ul>
+<ul class="simple">
+<li><strong>Une epoch</strong> : Un unique envoie du jeu de données d’entraînement au système durant la phase d’apprentissage.
+La nécessité de plusieurs epochs résulte du fait que lors de l’apprentissage,
+la rétropropagation nécessite plusieurs passage sur une même donnée pour tendre vers une solution optimale.</li>
+</ul>
+<ul class="simple">
+<li><strong>Un batch</strong> : Prenons l’exemple d’un très grand dataset lors de la phase d’apprentissage,
+le but ne va pas être de le donner en une seule fois au NN mais de le diviser en batchs pour simplifier son intégration.
+Ce sont donc des divisions du dataset. Le batch-size correspond au nombre d’éléments du dataset présent dans un batch.</li>
+</ul>
+</div>
+
 
     </div>
       
@@ -108,30 +137,30 @@
 </div>
 <!--Add in sidebar after search-->
 <script>
-    let sidebar = document.getElementById("sidebar");
+    let container = document.getElementsByClassName("container");
     // Definitions
-    let aDef = document.createElement("a");
-    let aDefText = document.createTextNode("Définitions");
-    aDef.appendChild(aDefText);
-    aDef.id = "sidebarDefinitions";
-    aDef.class = "sidebarFixedLinks";
-    aDef.href = "definitions.html";
-    sidebar.appendChild(aDef);
-
-    let br1 = document.createElement("BR");
-    sidebar.appendChild(br1);
+    // let aDef = document.createElement("a");
+    // let aDefText = document.createTextNode("Définitions");
+    // aDef.appendChild(aDefText);
+    // aDef.id = "sidebarDefinitions";
+    // aDef.class = "sidebarFixedLinks";
+    // aDef.href = "definitions.html";
+    // sidebar.appendChild(aDef);
+    //
+    // let br1 = document.createElement("BR");
+    // sidebar.appendChild(br1);
 
     // Bibliographie
     let aBiblio = document.createElement("a");
-    let aBiblioText = document.createTextNode("Bibliographie");
+    let aBiblioText = document.createTextNode("Bibliographie  ");
     aBiblio.appendChild(aBiblioText);
     aBiblio.id = "sidebarBibliographie";
     aDef.class = "sidebarFixedLinks";
     aBiblio.href = "bibliographie.html";
-    sidebar.appendChild(aBiblio);
+    container.appendChild(aBiblio);
 
-    let br2 = document.createElement("BR");
-    sidebar.appendChild(br2);
+    // let br2 = document.createElement("BR");
+    // sidebar.appendChild(br2);
 
     // A propos
     let aProp = document.createElement("a");
@@ -140,7 +169,7 @@
     aProp.id = "sidebarPropos";
     aDef.class = "sidebarFixedLinks";
     aProp.href = "a_propos.html";
-    sidebar.appendChild(aProp)
+    container.appendChild(aProp)
 </script>
 
 <footer class="footer">

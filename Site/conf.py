@@ -119,6 +119,7 @@ html_theme_options = {
     'navbar_links': [
         ("Accueil", "index"),
         ("Etat de l'art", "historique"),
+        ("Définitions", "definitions"),
         ("Bibliotèques python", "biblioteques"),
         ("Notre programme", "casse_tete"),
     ],
