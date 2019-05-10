@@ -33,10 +33,6 @@ max_moves = 5
 height, width = 5, 5
 mygame = ShiftIt(height, width)
 # --- prepare env ---------------------------------------------------
-# config = tf.ConfigProto()
-# config.gpu_options.allow_growth = True
-# config.gpu_options.per_process_gpu_memory_fraction = 0.4
-# session = tf.Session(config=config)
 _tmp = mygame.moves
 moves = dict(zip(range(len(_tmp)), _tmp))
 reverse_moves = {v:k for k,v in moves.items()}
@@ -170,7 +166,6 @@ model.add(Dense(outputl, activation='softmax'))
 
 # --- compile and run training ---
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
-
 model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=epoch_nb)
 
 

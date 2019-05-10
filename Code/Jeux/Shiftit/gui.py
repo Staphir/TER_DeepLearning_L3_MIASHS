@@ -1,7 +1,7 @@
 # ===================================================================
 # Shift It : Little python build of sliding game shift it
 # ===================================================================
-__author__  = "Martin Devreese"
+__author__  = "Martin Devreese, Maxime Dulieu, Tim Laurençon"
 __version__ = "1.0"
 __date__    = "06/05/2019"
 # -------------------------------------------------------------------
