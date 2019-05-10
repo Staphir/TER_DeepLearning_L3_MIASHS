@@ -4,8 +4,9 @@
 
 __author__  = "Martin Devreese, Maxime Dulieu, Tim Laurençon"
 __version__ = "1.0"
-__date__    = "09/05/2019"
+__date__    = "10/05/2019"
 # -------------------------------------------------------------------
+
 import pickle
 from copy import deepcopy
 
@@ -25,14 +26,14 @@ from shiftit import ShiftIt
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
-# -------------------------------------------------------------------
 
 
 
 # --- env vars ------------------------------------------------------
-_use_saved_data = True
-_save_data = False
-_use_random_playground = True
+_use_saved_data = True # use training data saved on disk
+_save_data = not _use_saved_data # save training data to disk
+_save_model = False
+_use_random_playground = True # (use reset() instead of generate())
 max_moves = 5
 height, width = 5, 5
 mygame = ShiftIt(height, width)
@@ -111,13 +112,13 @@ def generate_game_data(game, path) :
 # --- building model ------------------------------------------------
 input_shape = (-1, height, width, 1)
 training_data_sample_number = 10000
-evaluation_data_sample_number = 2000
+# evaluation_data_sample_number = 2000
 
 if not _use_saved_data :
 
     # --- 80 - 20 / train - eval; no need to shuffle data ---
     train_data_gen = data_generator(10000)
-    eval_data_gen = data_generator(200)
+    # eval_data_gen = data_generator(200)
 
     X = [] # feature set
     y = [] # label set
@@ -134,11 +135,11 @@ if not _use_saved_data :
     if _save_data :
 
         if _use_random_playground :
-            pickle_out_X = open("X.pickle", "wb")
-            pickle_out_y = open("y.pickle", "wb")
+            pickle_out_X = open(f"{_tdd}X.pickle", "wb")
+            pickle_out_y = open(f"{_tdd}y.pickle", "wb")
         else :
-            pickle_out_X = open("X_stable.pickle", "wb")
-            pickle_out_y = open("y_stable.pickle", "wb")
+            pickle_out_X = open(f"{_tdd}X_stable.pickle", "wb")
+            pickle_out_y = open(f"{_tdd}y_stable.pickle", "wb")
 
         pickle.dump(X, pickle_out_X)
         pickle_out_X.close()
@@ -149,11 +150,11 @@ else :
 
     # --- get data from disk ---
     if _use_random_playground : 
-        pickle_in_X = open("X.pickle", "rb") # with shiftit.generate()
-        pickle_in_y = open("y.pickle", "rb")
+        pickle_in_X = open(f"{_tdd}X.pickle", "rb") # with shiftit.generate()
+        pickle_in_y = open(f"{_tdd}y.pickle", "rb")
     else :
-        pickle_in_X = open("X_stable.pickle", "rb") # with shiftit.reset()
-        pickle_in_y = open("y_stable.pickle", "rb")
+        pickle_in_X = open(f"{_tdd}X_stable.pickle", "rb") # with shiftit.reset()
+        pickle_in_y = open(f"{_tdd}y_stable.pickle", "rb")
     X = pickle.load(pickle_in_X)
     y = pickle.load(pickle_in_y)
 
@@ -161,8 +162,8 @@ else :
 
 # --- create the model ---
 outputl = len(moves)
-epoch_nb = 100
-batch_size = 18
+epoch_nb = 20
+batch_size = 32
 
 model = Sequential()
 
@@ -190,5 +191,6 @@ model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accur
 model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=epoch_nb)
 
 # --- saving the model ---
-model.save('shifit_model.h5')  # creates a HDF5 file 'my_model.h5'
-# model.save('shifit_model_stable.h5')  # creates a HDF5 file 'my_model.h5'
+if _save_data :
+    model.save('shiftit_model_3.h5')  # creates a HDF5 file 'my_model.h5'
+    # model.save('shifit_model_stable.h5')  # creates a HDF5 file 'my_model.h5'
