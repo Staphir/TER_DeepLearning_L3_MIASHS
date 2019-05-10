@@ -10,16 +10,16 @@ import pickle
 from copy import deepcopy
 
 #import Martin
-# from tensorflow.keras.models import Sequential
-# from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
-# from tensorflow.keras.utils import to_categorical
-# from shiftit import ShiftIt
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
+from tensorflow.keras.utils import to_categorical
+from shiftit import ShiftIt
 
 #import Maxime
-from Jeux.Shiftit.shiftit import ShiftIt
-from tensorflow.python.keras.models import Sequential
-from tensorflow.python.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
-from tensorflow.python.keras.utils import to_categorical
+# from Jeux.Shiftit.shiftit import ShiftIt
+# from tensorflow.python.keras.models import Sequential
+# from tensorflow.python.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
+# from tensorflow.python.keras.utils import to_categorical
 
 # import communs
 import numpy as np
@@ -29,6 +29,7 @@ from tensorflow import keras
 # -------------------------------------------------------------------
 # --- env vars ------------------------------------------------------
 _use_saved_data = True
+_save_data = False
 _use_random_playground = True
 max_moves = 5
 height, width = 5, 5
@@ -91,11 +92,8 @@ def generate_game_data(game, path) :
     return _solList
 # --- building model ------------------------------------------------
 input_shape = (-1, height, width, 1)
-outputl = len(moves)
-
-epoch_nb = 10
-batch_size = 32
-
+training_data_sample_number = 10000
+evaluation_data_sample_number = 2000
 
 if not _use_saved_data :
 
@@ -115,17 +113,19 @@ if not _use_saved_data :
     y = to_categorical(y)
 
     # --- save data to disk to skip generating them again ---
-    if _use_random_playground :
-        pickle_out_X = open("X.pickle", "wb")
-        pickle_out_y = open("y.pickle", "wb")
-    else :
-        pickle_out_X = open("X_stable.pickle", "wb")
-        pickle_out_y = open("y_stable.pickle", "wb")
+    if _save_data :
 
-    pickle.dump(X, pickle_out_X)
-    pickle_out_X.close()
-    pickle.dump(y, pickle_out_y)
-    pickle_out_y.close()
+        if _use_random_playground :
+            pickle_out_X = open("X.pickle", "wb")
+            pickle_out_y = open("y.pickle", "wb")
+        else :
+            pickle_out_X = open("X_stable.pickle", "wb")
+            pickle_out_y = open("y_stable.pickle", "wb")
+
+        pickle.dump(X, pickle_out_X)
+        pickle_out_X.close()
+        pickle.dump(y, pickle_out_y)
+        pickle_out_y.close()
 
 else :
 
@@ -139,9 +139,11 @@ else :
     X = pickle.load(pickle_in_X)
     y = pickle.load(pickle_in_y)
 
-
-
 # --- create the model ---
+outputl = len(moves)
+epoch_nb = 100
+batch_size = 18
+
 model = Sequential()
 
 # --- input ---
@@ -163,14 +165,10 @@ model.add(Dense(128, activation='tanh'))
 model.add(Dropout(0.5))
 model.add(Dense(outputl, activation='softmax'))
 
-
-
 # --- compile and run training ---
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
 model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=epoch_nb)
 
-
-
 # --- saving the model ---
-# model.save('shifit_model.h5')  # creates a HDF5 file 'my_model.h5'
+model.save('shifit_model.h5')  # creates a HDF5 file 'my_model.h5'
 # model.save('shifit_model_stable.h5')  # creates a HDF5 file 'my_model.h5'

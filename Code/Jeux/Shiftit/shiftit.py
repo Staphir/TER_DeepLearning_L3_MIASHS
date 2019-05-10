@@ -151,7 +151,7 @@ if __name__ == "__main__":
     path_to_success = mygame.shuffle(10)
     print("# Scrambled state :", mygame, sep=_sep, end=_sep)
     moves = mygame.moves
-    print(f"# MOVES : {moves}", f"# PATH = {path_to_success}", sep=_sep, end=_sep)
+    print(f"# POSSIBLE MOVES : {moves}", f"# PATH = {path_to_success}", sep=_sep, end=_sep)
     for key in path_to_success : mygame.shift(key)
     print("# After PATH application :", mygame, sep=_sep, end=_sep)
 # -------------------------------------------------------------------
