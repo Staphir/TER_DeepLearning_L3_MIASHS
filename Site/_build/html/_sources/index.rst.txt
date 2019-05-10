@@ -1,22 +1,17 @@
-.. TER_DeepLearning documentation master file, created by
-   sphinx-quickstart on Wed Mar  6 16:36:44 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. title:: Accueil
 
 Bienvenue sur le site de notre TER sur le Deep-learning
 =======================================================
 
-.. toctree::
-   :maxdepth: 1
-
-
---------------------------------------------------------
-
-.. toctree::
-   :maxdepth: 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Abstract
 ========
+
+~~~~~~~~
+
+.. toctree::
+   :maxdepth: 1
 
 Since the arrival of multiple Machine Learning packages(such as Tensorflow or PyTorch for Python programming language)
 that came with the large growth in performance we’ve recently seen in personal computer, more and more useful real life applications
@@ -37,11 +32,15 @@ is necessary to get the best performances out of our model. We did manage to get
 but did not get the final sloving accuracy we were expecting (results are an overall of 1 out of 5 chances of getting the right move at a certain time in the game).
 To conclude, we successfully implemented the "Shift it" game.
 
-.. toctree::
-   :maxdepth: 1
+~~~~~~
 
 Résumé
 ======
+
+~~~~~~
+
+.. toctree::
+   :maxdepth: 1
 
 Le "deep-learning" (sous-branche des techniques de "machine-learning") est une méthode de programmation en Intelligence Artificielle
 qui s’est énormément développée ces dernières années avec l’augmentation de la puissance de calcul des ordinateurs.

@@ -1,5 +1,9 @@
+.. title:: Bibliotèques python
+
 Introduction
 ============
+
+~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 2
@@ -7,6 +11,8 @@ Introduction
 
 Présentation de différentes bibliotèques
 ========================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 2
@@ -70,8 +76,13 @@ Point faible, elle est lente car il y a beaucoup de fonctionnalitées implément
 
 `source <https://www.tensorflow.org>`_
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Comparaison de différentes bibliotèques
 =======================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. toctree::
    :maxdepth: 2
 

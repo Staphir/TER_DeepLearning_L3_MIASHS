@@ -1,10 +1,10 @@
 Définitions importantes
 =======================
 
+~~~~~~~~~~~~~~~~~~~~~~~
+
 .. toctree::
    :maxdepth: 2
-
------------------------
 
 Certains termes et notions utilisés couramment en réseaux de neurones (Neural Network - NN) nécessitent d’être définis pour continuer au travers de ce projet.
 La plupart du temps ce sont des termes qui dérivent de l’anglais ou alors des notions relativement simples mais qui méritent d’être explicitées.

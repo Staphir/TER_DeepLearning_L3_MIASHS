@@ -1,10 +1,10 @@
 Bibliographie
 =============
 
+~~~~~~~~~~~~~
+
 .. toctree::
    :maxdepth: 2
-
--------------
 
 Tensorflow
 **********

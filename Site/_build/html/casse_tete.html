@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Casse-tête &#8212; Documentation TER_DeepLearning </title>
+    <title>Notre programme &#8212; Documentation TER_DeepLearning </title>
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-styles.css" />
@@ -88,7 +88,9 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">Casse-tête</a></li>
+<li><a class="reference internal" href="#">Introduction</a></li>
+<li><a class="reference internal" href="#la-methode-dimplementation">La méthode d’implémentation</a></li>
+<li><a class="reference internal" href="#le-shift-it">Le Shift It</a></li>
 </ul>
 
 <form action="search.html" method="get">
@@ -102,27 +104,99 @@
       </div>
     <div class="col-md-9 content">
       
-  <div class="section" id="casse-tete">
-<h1>Casse-tête<a class="headerlink" href="#casse-tete" title="Lien permanent vers ce titre">¶</a></h1>
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Lien permanent vers ce titre">¶</a></h1>
+<hr class="docutils" />
 <div class="toctree-wrapper compound">
 </div>
+<p>Notre but aura été de trouver les différentes méthodes de résolution de casse-têtes par algorithmes de deep-learning,
+c’est à dire créer un outil utilisant le deep-learning et l’entraîner sur des données
+correspondant à des situations que l’on peut rencontrer dans un casse-tête.</p>
+<p>Il est avant tout important de noter que ce travail est un sujet de recherche.
+Quand nous avons commencé la réalisation de ce projet, nous n’avions aucune idée de où cela allait nous mener.</p>
+<p>Nos bases concernant ces système d’apprentissage étant quasi-inexistantes au commencement de ce projet,
+il a été nécessaire de tenter de comprendre les différents modules mis à notre disposition
+en réalisant des tutoriels de manipulation proposés par les équipes de développement ou
+encore d’autres personnes proposant une explication guidée de l’utilisation de telle ou telle bibliothèque.
+Vous pourrez retrouver tous les liens dans la <a class="reference external" href="bibliographie.html">bibliographie</a>.
+Il est aussi important de noter que certains modules complémentaires sont devenus indispensable
+lors de l’utilisation de ces bibliothèques de Réseaux de Neurones et ont donc nécessité que l’on s’y intéresse
+et apprenne à les manipuler (Matplotlib et NumPy notamment).</p>
+</div>
 <hr class="docutils" />
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_game</span><span class="p">()</span> <span class="p">:</span>
+<div class="section" id="la-methode-dimplementation">
+<h1>La méthode d’implémentation<a class="headerlink" href="#la-methode-dimplementation" title="Lien permanent vers ce titre">¶</a></h1>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+</div>
+<p>Pour créer notre propre algorithme de Deep-Learning nous avons commencé par choisir
+la méthode suivant laquelle nous allions fournir nos données à l’algorithme.
+Comme mentionné dans <a class="reference external" href="historique.html">l’état de l’art</a> cette étape dans la création d’une méthode d’apprentissage par Deep-Learning est très importante.
+Pour ce faire, nous nous sommes basé sur l’implémentation de Jeremy Pinto (<a class="reference external" href="https://github.com/jerpint/rubiks_cube_convnet">github de son projet</a>)
+pour concevoir notre générateur de données.</p>
+<p>Son implémentation consiste en générer des partie aléatoires de Rubik’s cube en partant d’un état résolu
+puis mélangé un certain nombre de fois (10 dans son cas). Après quoi il utilise le chemin vers l’état mélangé <em>Scrambled state</em>
+pour trouver le chemin inverse vers la résolution.</p>
+<p>En partant de l’état mélangé et en appliquant le premier mouvement du chemin vers la résolution,
+il obtient l’état suivant de la matrice vers résolution, puis construit des pairs
+(matrice (6x3x3 - 6 faces de 3 cellules en hauteur et 3 cellules en largeur) - mouvement),
+la matrice correspondant à l’état mélangé du cube et le mouvement à celui qu’il faut effectuer pour atteindre un état de résolution plus proche du cube résolu.</p>
+<p>Pour plus de clarté, voici le pseudo code du déroulement de la génération des données :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="c1"># Nombre d&#39;itération souhaitée</span>
 
-    <span class="k">if</span> <span class="n">_use_random_playground</span> <span class="p">:</span>
-        <span class="c1"># generate random playground</span>
-        <span class="n">mygame</span><span class="o">.</span><span class="n">generate</span><span class="p">()</span>
-    <span class="k">else</span> <span class="p">:</span>
-        <span class="c1"># or reset to learn on exact same starting pattern</span>
-        <span class="c1"># would be nice to try out if no result with random patterns</span>
-        <span class="n">mygame</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+<span class="n">X</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># stockage des matrices</span>
+<span class="n">y</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># stockage des mouvements</span>
 
-    <span class="c1"># shuffle playground and get path to success</span>
-    <span class="n">path_to_success</span> <span class="o">=</span> <span class="n">mygame</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">max_moves</span><span class="p">)</span>
+<span class="n">pour</span> <span class="n">i</span> <span class="n">de</span> <span class="mi">1</span> <span class="n">à</span> <span class="n">N</span> <span class="p">:</span>
 
-    <span class="k">return</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">mygame</span><span class="p">),</span> <span class="n">path_to_success</span>
+    <span class="n">cube</span> <span class="o">=</span> <span class="n">mycube</span><span class="p">()</span> <span class="c1"># générer un nouvel objet cube avec 6 faces de 3x3 cellules</span>
+
+    <span class="c1"># mélanger l&#39;état du cube 10 fois et récupérer le chemin de mélange</span>
+    <span class="n">chemin_vers_état_mélangé</span> <span class="o">=</span> <span class="n">cube</span><span class="o">.</span><span class="n">mélanger</span><span class="p">(</span> <span class="mi">10</span> <span class="p">)</span> 
+    
+    <span class="c1"># obtenir le chemin à effectuer depuis l&#39;état mélangé</span>
+    <span class="n">chemin_vers_resolution</span> <span class="o">=</span> <span class="n">cube</span><span class="o">.</span><span class="n">inverser_chemin</span><span class="p">(</span> <span class="n">chemin_vers_état_mélangé</span> <span class="p">)</span>
+
+    <span class="n">pour</span> <span class="n">chaque</span> <span class="n">mouvement</span> <span class="n">dans</span> <span class="n">chemin_vers_resolution</span> <span class="p">:</span>
+
+        <span class="c1"># récupérer l&#39;état actuel de la matrice du cube</span>
+        <span class="n">grille</span> <span class="o">=</span> <span class="n">cube</span><span class="o">.</span><span class="n">grille</span><span class="p">()</span>
+
+        <span class="c1"># stocker les données dans 2 listes différentes </span>
+        <span class="c1"># où ces données se situront au même indice</span>
+        <span class="n">X</span><span class="o">.</span><span class="n">ajouter</span><span class="p">(</span> <span class="n">grille</span> <span class="p">)</span>
+        <span class="n">y</span><span class="o">.</span><span class="n">ajouter</span><span class="p">(</span> <span class="n">mouvement</span> <span class="p">)</span>
+        
+        <span class="c1"># générer l&#39;état suivant du cube</span>
+        <span class="n">cube</span><span class="o">.</span><span class="n">appliquer_mouvement</span><span class="p">(</span> <span class="n">mouvement</span> <span class="p">)</span>
+
+<span class="n">fin</span> <span class="n">pour</span> 
 </pre></div>
 </div>
+<p>Le but de son algorithme est de pouvoir entraîner la machine à, pour une certaine configuration du cube,
+prédire le mouvement à effectuer pour se rapprocher de l’état résolu.
+Il effectue donc ici un apprentissage supervisé en fournissant à chaque fois un état du cube
+et son mouvement associé puis en demandant à son réseau de neurone de prédire le prochain mouvement à faire.
+La rétropropagation se fait alors sur la comparaison entre le mouvement prédit et celui fourni.</p>
+<p>Après 12h d’entraînement de son réseau de neurone, il parvient à obtenir un modèle capable de résoudre
+avec un bon taux de réussite un Rubik’s cube mélangé 6 fois (6 pas de différence avec l’état résolu).
+Le modèle n’est pas parfait et au delà de 6 mouvements aléatoires,
+le NN ne parvient plus vraiment à trouver les solutions comme on peut le voir ci dessous.</p>
+<a class="reference internal image-reference" href="_images/cube_solving.gif"><img alt="_images/cube_solving.gif" class="align-center" src="_images/cube_solving.gif" style="width: 426.40000000000003px; height: 366.6px;" /></a>
+<p>Cette méthode est globalement la seule et unique implémentation</p>
+<p>Après avoir étudié cette exemple appliqué au rubik’s cube, nous avons voulu faire de même avec un autre casse-tête, le Shift It.
+Il a donc fallu que nous programmons le nôtre tout en réfléchissant à des fonctions permettants l’implémentation de l’algorithme de Deep-Learning.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="le-shift-it">
+<h1>Le Shift It<a class="headerlink" href="#le-shift-it" title="Lien permanent vers ce titre">¶</a></h1>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+</div>
+<p>Le Shift It se joue avec une grille comportant des carrés de plusieurs couleurs.
+Le but est d’avoir une grille où toutes les cases de la même couleur formes une seul zone.
+Il faut donc autant de zones que de couleurs et que chaque case soit adjacente avec au moins une autre case de la même couleur.
+Voici un exemple du jeu sur Android :</p>
 <a class="reference internal image-reference" href="_images/Shiftit_GUI2.gif"><img alt="_images/Shiftit_GUI2.gif" class="align-center" src="_images/Shiftit_GUI2.gif" style="width: 320.0px; height: 390.0px;" /></a>
 </div>
 
