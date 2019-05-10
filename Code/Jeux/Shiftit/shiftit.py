@@ -7,13 +7,15 @@ __date__    = "06/05/2019"
 # -------------------------------------------------------------------
 import numpy as np
 from random import randrange, choice
+from solver import AISolver
 # -------------------------------------------------------------------
 class ShiftIt () :
-    def __init__(self, n:int, m:int) :
+    def __init__(self, n:int, m:int, wd='./') :
         self.__height = n
         self.__width  = m
         self.__grid   = np.zeros((n, m), int)
         self.__path   = []
+        self.__solver = AISolver(wd, self.moves)
         self.solvedState = []
         # ---
         self.generate()
@@ -114,6 +116,7 @@ class ShiftIt () :
         self.__grid = np.rot90(grid) if vec else grid
 
         self.__path = [self.__get_revKey(key), *self.__path]
+        # self.__path = self.path[::-1].append(self.__get_revKey(key))[::-1]
 
     def empty_path(self) :
         self.__path = []
@@ -121,6 +124,38 @@ class ShiftIt () :
     def reset(self) :
         self.empty_path()
         self.__grid = self.solvedState
+
+    def solve_with_AI(self, _limit=20) :
+        _path = []
+        # _limit = limit_factor*len(self.__path)
+
+        # Save state of game to put it back in place at the end for
+        # graphic purpose - Yes it's a bad practice but for the sake
+        # of time we're gonna go that way
+        _tmp = (self.__path, self.__grid)
+
+        # limit number of moves if lost - expected to happend (a lot)
+        for _ in range(_limit) :
+            
+            # If success, break move generation
+            if self.__check_success() : break
+
+            # get grid layout
+            _grid = self.list_grid
+
+            # Predict move according to built neural network
+            _predicted_move = self.__solver.predict(_grid)
+
+            # add the predicted move to the path
+            _path.append(_predicted_move)
+
+
+            # Execute key to generate next grid
+            self.shift(_predicted_move)
+
+
+        self.__path, self.__grid = _tmp
+        return _path
 
     @property
     def list_grid(self) : return self.__grid.tolist()

@@ -1,5 +1,5 @@
 # ===================================================================
-# Shift It : A learning Method
+# Shift It : A learning Method for shiftit
 # ===================================================================
 
 __author__  = "Martin Devreese, Maxime Dulieu, Tim Laurençon"
@@ -9,7 +9,7 @@ __date__    = "09/05/2019"
 import pickle
 from copy import deepcopy
 
-#import Martin
+#import uses tensorflow 2.0
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
 from tensorflow.keras.utils import to_categorical
@@ -25,8 +25,10 @@ from shiftit import ShiftIt
 import numpy as np
 import tensorflow as tf
 from tensorflow import keras
-
 # -------------------------------------------------------------------
+
+
+
 # --- env vars ------------------------------------------------------
 _use_saved_data = True
 _save_data = False
@@ -34,10 +36,17 @@ _use_random_playground = True
 max_moves = 5
 height, width = 5, 5
 mygame = ShiftIt(height, width)
+_tdd = "./train_data/" # training data directory
+
+
+
 # --- prepare env ---------------------------------------------------
 _tmp = mygame.moves
 moves = dict(zip(range(len(_tmp)), _tmp))
 reverse_moves = {v:k for k,v in moves.items()}
+
+
+
 # --- define data generating methods --------------------------------
 def data_generator(game_count=100) : # iterator
     # set iteration number
@@ -53,6 +62,9 @@ def data_generator(game_count=100) : # iterator
         yield generate_game_data(game, path)
 
         _iter +=1
+
+
+
 # -------------------------------------------------------------------
 def generate_game() :
 
@@ -68,6 +80,9 @@ def generate_game() :
     path_to_success = mygame.shuffle(max_moves)
 
     return deepcopy(mygame), path_to_success
+
+
+
 # -------------------------------------------------------------------
 def generate_game_data(game, path) :
     # grid x next_step_to_solution
@@ -90,6 +105,9 @@ def generate_game_data(game, path) :
 
     # send back each resolution step
     return _solList
+
+
+
 # --- building model ------------------------------------------------
 input_shape = (-1, height, width, 1)
 training_data_sample_number = 10000
@@ -138,6 +156,8 @@ else :
         pickle_in_y = open("y_stable.pickle", "rb")
     X = pickle.load(pickle_in_X)
     y = pickle.load(pickle_in_y)
+
+
 
 # --- create the model ---
 outputl = len(moves)

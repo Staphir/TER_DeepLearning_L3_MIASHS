@@ -125,6 +125,8 @@ class GUI ():
         if self.__busy : return
         else : self.__busy = True
         # ---
+        predicted_path = self.__core.solve_with_AI()
+        self.execPath(predicted_path)
         # ---
         self.__busy = False
 
@@ -143,7 +145,8 @@ class GUI ():
             
             _arr = self.__arrows[key][0]
             _dir = ['Up', 'Down'] if int(key[0])%2 else ['Left', 'Right']
-            _fileName = [f'{self.__wd}img/arrow{_dir[len(key)>1]}_{state}.png' for state in ['pressed', 'flat']]
+            _fileName = [f'{self.__wd}img/arrow{_dir[len(key)>1]}_{state}.png'
+                        for state in ['pressed', 'flat']]
             _img_pressed = PhotoImage(file=_fileName[0])
             _img_flat = PhotoImage(file=_fileName[1])
             # ---
