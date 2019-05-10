@@ -47,6 +47,7 @@
             
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="historique.html">Etat de l'art</a></li>
+                <li><a href="definitions.html">Définitions</a></li>
                 <li><a href="biblioteques.html">Bibliotèques python</a></li>
                 <li><a href="casse_tete.html">Notre programme</a></li>
             
@@ -115,30 +116,30 @@
 </div>
 <!--Add in sidebar after search-->
 <script>
-    let sidebar = document.getElementById("sidebar");
+    let container = document.getElementsByClassName("container");
     // Definitions
-    let aDef = document.createElement("a");
-    let aDefText = document.createTextNode("Définitions");
-    aDef.appendChild(aDefText);
-    aDef.id = "sidebarDefinitions";
-    aDef.class = "sidebarFixedLinks";
-    aDef.href = "definitions.html";
-    sidebar.appendChild(aDef);
-
-    let br1 = document.createElement("BR");
-    sidebar.appendChild(br1);
+    // let aDef = document.createElement("a");
+    // let aDefText = document.createTextNode("Définitions");
+    // aDef.appendChild(aDefText);
+    // aDef.id = "sidebarDefinitions";
+    // aDef.class = "sidebarFixedLinks";
+    // aDef.href = "definitions.html";
+    // sidebar.appendChild(aDef);
+    //
+    // let br1 = document.createElement("BR");
+    // sidebar.appendChild(br1);
 
     // Bibliographie
     let aBiblio = document.createElement("a");
-    let aBiblioText = document.createTextNode("Bibliographie");
+    let aBiblioText = document.createTextNode("Bibliographie  ");
     aBiblio.appendChild(aBiblioText);
     aBiblio.id = "sidebarBibliographie";
     aDef.class = "sidebarFixedLinks";
     aBiblio.href = "bibliographie.html";
-    sidebar.appendChild(aBiblio);
+    container.appendChild(aBiblio);
 
-    let br2 = document.createElement("BR");
-    sidebar.appendChild(br2);
+    // let br2 = document.createElement("BR");
+    // sidebar.appendChild(br2);
 
     // A propos
     let aProp = document.createElement("a");
@@ -147,7 +148,7 @@
     aProp.id = "sidebarPropos";
     aDef.class = "sidebarFixedLinks";
     aProp.href = "a_propos.html";
-    sidebar.appendChild(aProp)
+    container.appendChild(aProp)
 </script>
 
 <footer class="footer">
