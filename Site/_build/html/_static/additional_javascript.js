@@ -22,19 +22,26 @@ window.onload=function(){
 
 
 //------ajout video youtube du shift it dans la page notre programme-------
-    let div_video = document.getElementById("youtube-shift-it");
-    if (div_video){
-        let width = "500"; let height = "300";
-        let allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
-        let frameborder = "0";
-        div_video.removeChild(div_video.lastElementChild);
+    let div_video = document.getElementById("exemple-du-shift-it-sur-android");
+    if (div_video) {
+        let width = "500";
+        let height = "300";
+        let src = "../../pictures/ShiftItAndroid.mp4";
+        // div_video.removeChild(div_video.lastElementChild);
 
-        let iframe = document.createElement("iframe");
-        iframe.width = width; iframe.height = height;
-        iframe.allow = allow; iframe.frameBorder = frameborder;
-        iframe.allowfullscreen = true;
-        iframe.src = "https://www.youtube.com/embed/pCwELYqLAGg";
+        let video = document.createElement("video");
+        video.width = width;
+        video.height = height;
+        video.align = "center";
+        video.autoplay = true;
+        video.loop = true;
 
-        div_video.appendChild(iframe);
+        let source = document.createElement("source");
+        source.src = src;
+        source.type = "video/mp4";
+        video.appendChild(source);
+
+        div_video.replaceChild(video, div_video.children[0]);
+
     }
 };
