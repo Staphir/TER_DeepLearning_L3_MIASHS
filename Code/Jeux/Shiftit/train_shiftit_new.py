@@ -95,10 +95,10 @@ def generate_game_data(game, path) :
         # get the playground as numpy.array before applying key
         _grid = game.list_grid
 
-        # get the solution for a given grid for training
+        # get the integer associated to the key
         _label = reverse_moves[key]
 
-        # store grid and key
+        # store grid and integer
         _solList.append([ _grid, _label ])
 
         # execute key
@@ -192,5 +192,5 @@ model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=epoch_nb)
 
 # --- saving the model ---
 if _save_data :
-    model.save('shiftit_model_3.h5')  # creates a HDF5 file 'my_model.h5'
+    model.save('shiftit_model.h5')  # creates a HDF5 file 'my_model.h5'
     # model.save('shifit_model_stable.h5')  # creates a HDF5 file 'my_model.h5'
