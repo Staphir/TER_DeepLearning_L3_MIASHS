@@ -1,9 +1,9 @@
 # ===================================================================
-# Shift It : Little python build of sliding game shift it
+# Shift It : fonctional core of puzzle sliding game shift it
 # ===================================================================
 __author__  = "Martin Devreese, Maxime Dulieu, Tim Laurençon"
-__version__ = "1.0"
-__date__    = "06/05/2019"
+__version__ = "1.1"
+__date__    = "10/05/2019"
 # -------------------------------------------------------------------
 import numpy as np
 from random import randrange, choice
@@ -64,7 +64,7 @@ class ShiftIt () :
     def __get_revKey(self, key:str) -> str :
         return key[0] if len(key)>1 else f"{key}'"
 
-    def generate(self) : #c:int) : 
+    def generate(self) : # , c:int=2) : 
         # assert c <= 10, 'No more than 10 different colors'
         # nb de cases de chaques couleurs
         
@@ -125,7 +125,7 @@ class ShiftIt () :
         self.empty_path()
         self.__grid = self.solvedState
 
-    def solve_with_AI(self, _limit=20) :
+    def solve_with_AI(self, limit=20) :
         _path = []
         # _limit = limit_factor*len(self.__path)
 
@@ -135,7 +135,7 @@ class ShiftIt () :
         _tmp = (self.__path, self.__grid)
 
         # limit number of moves if lost - expected to happend (a lot)
-        for _ in range(_limit) :
+        for _ in range(limit) :
             
             # If success, break move generation
             if self.__check_success() : break

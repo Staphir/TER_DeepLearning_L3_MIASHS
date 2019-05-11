@@ -11,7 +11,7 @@ import numpy as np
 class AISolver () :
     def __init__(self, wd, moves) :
         # self.__modelfile = f"{wd}/models/shiftit_model.h5"
-        self.__modelfile = f"{wd}/models/shiftit_model_1.h5"
+        self.__modelfile = f"{wd}models/shiftit_model_2.h5"
         self.__model = load_model(self.__modelfile)
         self.__moves = dict(zip(range(len(moves)), moves))
         # self.__reverse_moves = {v:k for k,v in self.__moves.items()}
