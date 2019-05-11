@@ -8,8 +8,6 @@ Bienvenue sur le site de notre TER sur le Deep-learning
 Abstract
 ========
 
-~~~~~~~~
-
 .. toctree::
    :maxdepth: 1
 
@@ -36,8 +34,6 @@ To conclude, we successfully implemented the "Shift it" game.
 
 Résumé
 ======
-
-~~~~~~
 
 .. toctree::
    :maxdepth: 1

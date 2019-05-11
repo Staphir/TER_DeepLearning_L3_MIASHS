@@ -3,42 +3,10 @@
 
 {# Add some extra stuff before and use existing with 'super()' call. #}
 
-{% block footer %}
-<!--Add in sidebar after search-->
-<script>
-    let container = document.getElementsByClassName("container");
-    // Definitions
-    // let aDef = document.createElement("a");
-    // let aDefText = document.createTextNode("Définitions");
-    // aDef.appendChild(aDefText);
-    // aDef.id = "sidebarDefinitions";
-    // aDef.class = "sidebarFixedLinks";
-    // aDef.href = "definitions.html";
-    // sidebar.appendChild(aDef);
-    //
-    // let br1 = document.createElement("BR");
-    // sidebar.appendChild(br1);
 
-    // Bibliographie
-    let aBiblio = document.createElement("a");
-    let aBiblioText = document.createTextNode("Bibliographie  ");
-    aBiblio.appendChild(aBiblioText);
-    aBiblio.id = "sidebarBibliographie";
-    aDef.class = "sidebarFixedLinks";
-    aBiblio.href = "bibliographie.html";
-    container.appendChild(aBiblio);
+{% block header %}
 
-    // let br2 = document.createElement("BR");
-    // sidebar.appendChild(br2);
-
-    // A propos
-    let aProp = document.createElement("a");
-    let aPropText = document.createTextNode("A propos");
-    aProp.appendChild(aPropText);
-    aProp.id = "sidebarPropos";
-    aDef.class = "sidebarFixedLinks";
-    aProp.href = "a_propos.html";
-    container.appendChild(aProp)
-</script>
 {{ super() }}
 {% endblock %}
+
+{% set script_files = script_files + ["_static/additional_javascript.js"] %}

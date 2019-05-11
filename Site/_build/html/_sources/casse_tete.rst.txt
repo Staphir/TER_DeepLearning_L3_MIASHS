@@ -88,8 +88,8 @@ Le but est d’avoir une grille où toutes les cases de la même couleur formes 
 Il faut donc autant de zones que de couleurs et que chaque case soit adjacente avec au moins une autre case de la même couleur.
 Voici un exemple du jeu sur Android :
 
-.. code-block:: html
-    :file: ../Site/_templates/youtube_link.html
+youtube shift it
+****************
 
 .. image:: pictures/Shiftit_GUI2.gif
     :scale: 50%
