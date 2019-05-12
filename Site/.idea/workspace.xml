@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c4b655-3899-437b-8ebc-750e43234c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pictures/popularite_internet.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.buildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/bibliographie.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/bibliographie.doctree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/biblioteques.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/biblioteques.doctree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/_sources/bibliographie.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/bibliographie.rst.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/_sources/biblioteques.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/biblioteques.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/a_propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/a_propos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/bibliographie.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/bibliographie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/biblioteques.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/biblioteques.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/casse_tete.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/casse_tete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/definitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/definitions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/genindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/genindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/historique.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/historique.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/searchindex.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/biblioteques.rst" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteques.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/Contribution_littéraire .png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/contribution_litteraire.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +29,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Site$sphinx_task_in_.coverage" NAME="sphinx task in  Coverage Results" MODIFIED="1557688012166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Site$sphinx_task_in_.coverage" NAME="sphinx task in  Coverage Results" MODIFIED="1557690450601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.85263985">
@@ -28,8 +38,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/conf.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="256">
-                  <caret line="168" selection-start-line="168" selection-end-line="168" />
+                <state relative-caret-position="595">
+                  <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -43,13 +53,18 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/biblioteques.rst">
               <provider selected="true" editor-type-id="restructured-text-editor" />
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/bibliographie.rst">
+              <provider selected="true" editor-type-id="restructured-text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.rst">
               <provider selected="true" editor-type-id="restructured-text-editor" />
             </entry>
           </file>
@@ -162,6 +177,8 @@
       <find>color</find>
       <find>color: #</find>
       <find>&quot; &quot;</find>
+      <find>icon</find>
+      <find>logo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,9 +211,9 @@
         <option value="$PROJECT_DIR$/casse_tete.rst" />
         <option value="$PROJECT_DIR$/a_propos.rst" />
         <option value="$PROJECT_DIR$/index.rst" />
-        <option value="$PROJECT_DIR$/conf.py" />
         <option value="$PROJECT_DIR$/historique.rst" />
         <option value="$PROJECT_DIR$/bibliographie.rst" />
+        <option value="$PROJECT_DIR$/conf.py" />
         <option value="$PROJECT_DIR$/biblioteques.rst" />
       </list>
     </option>
@@ -240,6 +257,11 @@
               <item name="Site" type="b2602c69:ProjectViewProjectNode" />
               <item name="Site" type="462c0819:PsiDirectoryNode" />
               <item name="_templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Site" type="462c0819:PsiDirectoryNode" />
+              <item name="pictures" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -328,7 +350,7 @@
       <workItem from="1557491686189" duration="22907000" />
       <workItem from="1557567933394" duration="10991000" />
       <workItem from="1557600330541" duration="14007000" />
-      <workItem from="1557654080996" duration="28009000" />
+      <workItem from="1557654080996" duration="30441000" />
     </task>
     <task id="LOCAL-00001" summary="Début texte présentation des librairies et bibliographie">
       <created>1551999412947</created>
@@ -442,11 +464,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557687485184</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fin comparaison bibliothèques">
+      <created>1557688133142</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1557688133142</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131695000" />
+    <option name="totallyTimeSpent" value="134127000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,13 +488,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14832215" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14832215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3045326" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3045326" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,7 +577,8 @@
     <MESSAGE value="add all files" />
     <MESSAGE value="fin notre programme + etat de l'art presque fini" />
     <MESSAGE value="On y est" />
-    <option name="LAST_COMMIT_MESSAGE" value="On y est" />
+    <MESSAGE value="fin comparaison bibliothèques" />
+    <option name="LAST_COMMIT_MESSAGE" value="fin comparaison bibliothèques" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_build/doctrees/a_propos.doctree">
@@ -807,26 +838,26 @@
     <entry file="file://$PROJECT_DIR$/a_propos.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/historique.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pictures/popularite_internet.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/biblioteques.rst">
+    <entry file="file://$PROJECT_DIR$/bibliographie.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bibliographie.rst">
+    <entry file="file://$PROJECT_DIR$/index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblioteques.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>

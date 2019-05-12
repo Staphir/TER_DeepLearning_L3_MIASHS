@@ -104,7 +104,7 @@ html_theme_options = {
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': " ",
+    'navbar_title': "Deep Learning - TER",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "Site",
@@ -165,7 +165,7 @@ html_theme_options = {
 
 # (Optional) Logo. Should be small enough to fit the navbar (ideally 24x24).
 # Path should be relative to the ``_static`` files directory.
-# html_logo = "pictures/icon.png"
+# html_logo = "pictures/icon.ico"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
