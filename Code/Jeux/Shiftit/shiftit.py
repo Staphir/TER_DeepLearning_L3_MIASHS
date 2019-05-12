@@ -10,12 +10,12 @@ from random import randrange, choice
 from solver import AISolver
 # -------------------------------------------------------------------
 class ShiftIt () :
-    def __init__(self, n:int, m:int, wd='./') :
+    def __init__(self, n:int, m:int, wd='./', solver=True) :
         self.__height = n
         self.__width  = m
         self.__grid   = np.zeros((n, m), int)
         self.__path   = []
-        self.__solver = AISolver(wd, self.moves)
+        self.__solver = AISolver(wd, self.moves) if solver else None
         self.solvedState = []
         # ---
         self.generate()
@@ -125,13 +125,11 @@ class ShiftIt () :
         self.empty_path()
         self.__grid = self.solvedState
 
-    def solve_with_AI(self, limit=20) :
+    def solve_with_AI(self, limit=20, mod=False) :
+        if self.__solver is None : return []
         _path = []
         # _limit = limit_factor*len(self.__path)
 
-        # Save state of game to put it back in place at the end for
-        # graphic purpose - Yes it's a bad practice but for the sake
-        # of time we're gonna go that way
         _tmp = (self.__path, self.__grid)
 
         # limit number of moves if lost - expected to happend (a lot)
@@ -153,8 +151,10 @@ class ShiftIt () :
             # Execute key to generate next grid
             self.shift(_predicted_move)
 
+        if not mod : self.__path, self.__grid = _tmp
 
-        self.__path, self.__grid = _tmp
+        # _sep = f"\n{15*'-'}\n"
+        # print(f'Number of moves predicted : {len(_path)}\nMove number limit {limit}', sep=_sep, end=_sep)
         return _path
 
     @property

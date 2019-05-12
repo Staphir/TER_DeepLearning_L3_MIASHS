@@ -12,14 +12,14 @@ from time import sleep
 # -------------------------------------------------------------------
 class GUI ():
     def __init__(self, master, height, width) :
-        self.__core = shiftit.ShiftIt(height, width)
+        # self.__wd     = './TER_DeepLearning_L3_MIASHS/Code/jeux/Shiftit/'
+        self.__wd     = './'
+        self.__core = shiftit.ShiftIt(height, width, wd=self.__wd)
         self.__master = master
         self.__height = height
         self.__width = width
         self.__length = width * height
         self.__colors = ['orange', 'red', 'blue', 'green', 'black', 'white']
-        # self.__wd     = './TER_DeepLearning_L3_MIASHS/Code/jeux/Shiftit/'
-        self.__wd     = './'
         self.__busy = False
         # ---
         self.__initialize()

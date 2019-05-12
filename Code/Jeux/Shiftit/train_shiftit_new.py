@@ -30,13 +30,13 @@ from tensorflow import keras
 
 
 # --- env vars ------------------------------------------------------
-_use_saved_data = True # use training data saved on disk
-_save_data = not _use_saved_data # save training data to disk
+_use_saved_data = False # use training data saved on disk
+_save_data = True # not _use_saved_data # save training data to disk
 _save_model = False
 _use_random_playground = True # (use reset() instead of generate())
 max_moves = 5
 height, width = 5, 5
-mygame = ShiftIt(height, width)
+mygame = ShiftIt(height, width, solver=False)
 _tdd = "./train_data/" # training data directory
 
 
@@ -114,61 +114,62 @@ input_shape = (-1, height, width, 1)
 training_data_sample_number = 10000
 # evaluation_data_sample_number = 2000
 
-if not _use_saved_data :
+# if not _use_saved_data :
 
-    # --- 80 - 20 / train - eval; no need to shuffle data ---
-    train_data_gen = data_generator(10000)
-    # eval_data_gen = data_generator(200)
+#     # --- 80 - 20 / train - eval; no need to shuffle data ---
+#     train_data_gen = data_generator(10000)
+#     # eval_data_gen = data_generator(200)
 
-    X = [] # feature set
-    y = [] # label set
+#     X = [] # feature set
+#     y = [] # label set
 
-    for _set in train_data_gen :
-        for feature, label in _set :
-            X.append(feature) # feature
-            y.append(label) # label
+#     for _set in train_data_gen :
+#         for feature, label in _set :
+#             X.append(feature) # feature
+#             y.append(label) # label
 
-    X = np.array(X).reshape(*input_shape)
-    y = to_categorical(y)
+#     X = np.array(X).reshape(*input_shape)
+#     y = to_categorical(y)
 
-    # --- save data to disk to skip generating them again ---
-    if _save_data :
+#     # --- save data to disk to skip generating them again ---
+#     if _save_data :
 
-        if _use_random_playground :
-            pickle_out_X = open(f"{_tdd}X.pickle", "wb")
-            pickle_out_y = open(f"{_tdd}y.pickle", "wb")
-        else :
-            pickle_out_X = open(f"{_tdd}X_stable.pickle", "wb")
-            pickle_out_y = open(f"{_tdd}y_stable.pickle", "wb")
+#         if _use_random_playground :
+#             pickle_out_X = open(f"{_tdd}X.pickle", "wb")
+#             pickle_out_y = open(f"{_tdd}y.pickle", "wb")
+#         else :
+#             pickle_out_X = open(f"{_tdd}X_stable.pickle", "wb")
+#             pickle_out_y = open(f"{_tdd}y_stable.pickle", "wb")
 
-        pickle.dump(X, pickle_out_X)
-        pickle_out_X.close()
-        pickle.dump(y, pickle_out_y)
-        pickle_out_y.close()
+#         pickle.dump(X, pickle_out_X)
+#         pickle_out_X.close()
+#         pickle.dump(y, pickle_out_y)
+#         pickle_out_y.close()
 
-else :
+# else :
 
-    # --- get data from disk ---
-    if _use_random_playground : 
-        pickle_in_X = open(f"{_tdd}X.pickle", "rb") # with shiftit.generate()
-        pickle_in_y = open(f"{_tdd}y.pickle", "rb")
-    else :
-        pickle_in_X = open(f"{_tdd}X_stable.pickle", "rb") # with shiftit.reset()
-        pickle_in_y = open(f"{_tdd}y_stable.pickle", "rb")
-    X = pickle.load(pickle_in_X)
-    y = pickle.load(pickle_in_y)
+#     # --- get data from disk ---
+#     if _use_random_playground : 
+#         pickle_in_X = open(f"{_tdd}X.pickle", "rb") # with shiftit.generate()
+#         pickle_in_y = open(f"{_tdd}y.pickle", "rb")
+#     else :
+#         pickle_in_X = open(f"{_tdd}X_stable.pickle", "rb") # with shiftit.reset()
+#         pickle_in_y = open(f"{_tdd}y_stable.pickle", "rb")
+#     X = pickle.load(pickle_in_X)
+#     y = pickle.load(pickle_in_y)
 
 
 
 # --- create the model ---
 outputl = len(moves)
-epoch_nb = 20
+iter_nb = 20
 batch_size = 32
 
 model = Sequential()
 
 # --- input ---
 model.add(Conv2D(64, (3,3), input_shape=input_shape[1:], activation='relu'))
+# model.add(batch_normalization())
 model.add(Activation('relu'))
 # model.add(MaxPooling2D(pool_size=(2,2), dim_ordering="th"))
 
@@ -188,7 +189,24 @@ model.add(Dense(outputl, activation='softmax'))
 
 # --- compile and run training ---
 model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
-model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=epoch_nb)
+
+for _ in range(iter_nb):
+    print(f'\n# ITERATION #{_+1} {"-"*15} #')
+    train_data_gen = data_generator(10000)
+    # eval_data_gen = data_generator(200)
+
+    X = [] # feature set
+    y = [] # label set
+
+    for _set in train_data_gen :
+        for feature, label in _set :
+            X.append(feature) # feature
+            y.append(label) # label
+
+    X = np.array(X).reshape(*input_shape)
+    y = to_categorical(y)
+
+    model.fit(X, y, batch_size=batch_size, validation_split=0.1, epochs=3)
 
 # --- saving the model ---
 if _save_data :
