@@ -49,7 +49,6 @@ def assess_AI() :
     success_moves_mean = moves_nb / success_nb
     return success_nb, success_moves_mean
 
-
 for _ in range(1, 7) :
     shuffle_moves = _
     print('\n\nNumber of shuffle moves : {}'.format(_))
