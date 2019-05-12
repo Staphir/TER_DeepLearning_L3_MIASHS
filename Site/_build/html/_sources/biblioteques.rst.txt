@@ -1,12 +1,15 @@
 .. title:: Bibliotèques python
 
-Avans-propos
-============
+Présentation de différentes bibliotèques
+========================================
 
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 2
+
+Avans-propos
+************
 
 Avant de vous présenter les principales bibliothèques python permettant de faire du Deep-Learning,
 il faut savoir qu’une bibliothèque scientifique appelé NumPy est utilisé
@@ -17,14 +20,17 @@ et la manipulation de matrice à n dimension (noté numpy.array).
 
 `Page d'accueil NumPy <http://www.numpy.org/>`_
 
+Keras
+*********
 
-Présentation de différentes bibliotèques
-========================================
+**Description**
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sûrement la bibliotèque python la plus aimé car elle est simple d’utilisation sans pour autant brider les possibilités de programmation.
+Seul point faible, la personnalisation est difficile à mettre en place.
+Elle se programme sous forme de blocs, ce qui fait sa simplicité et réduit la longueur du code.
+Les personnes utilisants Keras commencent à migrer vers TensorFlow qui est justement basé sur keras mais ajoute de nouvelles possibilitées.
 
-.. toctree::
-   :maxdepth: 2
+`Page d'accueil Keras <https://keras.io/>`_
 
 Theano
 ***********
@@ -34,6 +40,21 @@ Theano
 LA “sous-couche” des autres bibliotèques d’apprentissages de réseaux de neurones. Comme tous les autres utilise des Numpy.arrays
 
 `Page d'accueil Theano <http://deeplearning.net/software/theano/index.html>`_
+
+TensorFlow
+**********
+
+**Description**
+
+TensorFlow est une bibliotèque open source développée  par une équipe de Google (Google Brain Team). Elle n'est pas seulement
+utilisée par Google mais par beaucoup d'autres grandes entreprises (Twitter, Coca-Cola, Airbus...). Cette bibliotèque
+peut être utilisée pour plusieurs plateformes (ordinateurs, telephones, internet et cloud).
+Elle est principalement utilisé dans la reconnaissance vocale ou d’image et dans les applications textuelles, comme Google Translate par exemple.
+Elle a pour avantage d’être très utilisée ce qui fait qu’il y a beaucoup de documentation avec une grosse communauté de développeur.
+Point faible, elle est lente car il y a beaucoup de fonctionnalitées implémentées qui ne seront pas utilisé par tout le monde mais forcément importés.
+
+
+`Page d'accueil TensorFlow <https://www.tensorflow.org>`_
 
 Pytorch
 ************
@@ -48,33 +69,6 @@ Mais par contre il n’y a pas d’interface permettant de visualiser le process
 
 `Page d'accueil Pytorch <https://pytorch.org/>`_
 
-Keras
-*********
-
-**Description**
-
-Sûrement la bibliotèque python la plus aimé car elle est simple d’utilisation sans pour autant brider les possibilités de programmation.
-Seul point faible, la personnalisation est difficile à mettre en place.
-Elle se programme sous forme de blocs, ce qui fait sa simplicité et réduit la longueur du code.
-Les personnes utilisants Keras commencent à migrer vers TensorFlow qui est justement basé sur keras mais ajoute de nouvelles possibilitées.
-
-`Page d'accueil Keras <https://keras.io/>`_
-
-TensorFlow
-***************
-
-**Description**
-
-TensorFlow est une bibliotèque open source développée  par une équipe de Google (Google Brain Team). Elle n'est pas seulement
-utilisée par Google mais par beaucoup d'autres grandes entreprises (Twitter, Coca-Cola, Airbus...). Cette bibliotèque
-peut être utilisée pour plusieurs plateformes (ordinateurs, telephones, internet et cloud).
-Elle est principalement utilisé dans la reconnaissance vocale ou d’image et dans les applications textuelles, comme Google Translate par exemple.
-Elle a pour avantage d’être très utilisée ce qui fait qu’il y a beaucoup de documentation avec une grosse communauté de développeur.
-Point faible, elle est lente car il y a beaucoup de fonctionnalitées implémentées qui ne seront pas utilisé par tout le monde mais forcément importés.
-
-
-`Page d'accueil TensorFlow <https://www.tensorflow.org>`_
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Comparaison de différentes bibliotèques
@@ -85,8 +79,38 @@ Comparaison de différentes bibliotèques
 .. toctree::
    :maxdepth: 2
 
-Sur le site `towardsdatascience <https://towardsdatascience.com/deep-learning-framework-power-scores-2018-23607ddf297a>`_
-une comparaison entre plusieurs bibliotèques python a été faite. Le score de chaque bibliotèque a été calculé en fonction
-de critères tels que la fréquence de recherche google, l'activité GitHub ou bien le nombre d'articles qui en parle.
+Dans cette partie nous comparerons seulement les quatres bibliothèques présentées
+ci-dessus car ce sont les bibliothèques python les plus utilisées.
+Il faut tout de même garder en tête que TensorFlow est basé sur Keras donc ceux
+qui utilisent TensorFlow utilise aussi d’une certaine manière Keras.
 
-.. image:: pictures/Deep_Learning_Framework_Power_Scores_2018.png
+La comparaison entre plusieurs bibliothèques peut se faire sous de nombreux aspects
+tels que la popularité, la complexité d’utilisation, la rapidité d'exécution, etc.
+
+L'article Deep Learning Framework Power Scores 2018 de Jeff Hale nous a permis d'avoir
+une comparaison de l’utilisation, de l’intérêt et de la popularité des différentes bibliothèques python.
+
+
+L'article de Jeff Hale
+**********************
+
+L'article `Deep Learning Framework Power Scores 2018 <https://towardsdatascience.com/deep-learning-framework-power-scores-2018-23607ddf297a>`_
+de Jeff Hale nous a permis d'avoir une comparaison de l’utilisation,
+de l’intérêt et de la popularité des différentes bibliothèques python.
+
+Jeff Hale a regroupé tous ses résultats et en a fait un seul et
+même graphique où il donne des scores à chaque bibliothèque.
+Sur ce graphique il est possible de voir que TensorFlow est largement plus utilisé que les autres.
+Cependant, il faut prendre en compte le fait que TensorFlow est en quelques sortes
+une amélioration / surcouche de Keras et que Keras éxiste depuis plus longtemps que Pytorch et TensorFlow.
+
+On peut par exemple proposé que les personnes utilisants Keras migre de plus en plus vers Tensorflow
+sachant que certaines personnes (du fait de sa simplicité) commencer directement le Deep Learning avec Tensorflow.
+PyTorch, d’un autre côté, est plus compliqué et est utilisé dans des cas un peu plus particulier
+car permet plus de personnalisation. Enfin, Theano est classé dernier mais cela semble logique
+du fait que c’est une des premières bibliothèques python permettant de faire du Deep Learning et qui est,
+par conséquent, moins performante et dispose de moins de fonctionnalités. Theano est aussi plus
+difficile à prendre en main et par conséquent est nettement moins utilisé.
+
+.. image:: ../Site/pictures/Score_de_puissance.png
+

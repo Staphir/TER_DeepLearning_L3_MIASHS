@@ -2,29 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c4b655-3899-437b-8ebc-750e43234c53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/train_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/Score_de_puissance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/shrug.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Code/Jeux/Shiftit/generate_data.pseudoc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Code/Jeux/Shiftit/train_shiftit_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/Jeux/Shiftit/train_shiftit_new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.buildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.buildinfo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/biblioteques.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/biblioteques.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/casse_tete.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/casse_tete.doctree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/historique.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/historique.doctree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/_sources/biblioteques.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/biblioteques.rst.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/_sources/casse_tete.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/casse_tete.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_sources/historique.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/historique.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_static/bootstrap-sphinx.css" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_static/bootstrap-sphinx.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/a_propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/a_propos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/bibliographie.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/bibliographie.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/_static/my-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_static/my-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/biblioteques.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/biblioteques.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/definitions.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/definitions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/historique.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/historique.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/casse_tete.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/casse_tete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/objects.inv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/searchindex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_static/my-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/_static/my-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/biblioteques.rst" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteques.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/casse_tete.rst" beforeDir="false" afterPath="$PROJECT_DIR$/casse_tete.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/historique.rst" beforeDir="false" afterPath="$PROJECT_DIR$/historique.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,10 +30,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Site$sphinx_task_in_.coverage" NAME="sphinx task in  Coverage Results" MODIFIED="1557662659432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Site$sphinx_task_in_.coverage" NAME="sphinx task in  Coverage Results" MODIFIED="1557682956789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7076438">
+    <splitter split-orientation="horizontal" split-proportion="0.464933">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -53,18 +50,13 @@
               <provider selected="true" editor-type-id="restructured-text-editor" />
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_static/my-styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+                <state relative-caret-position="289">
+                  <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
                 </state>
               </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/historique.rst">
-              <provider selected="true" editor-type-id="restructured-text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -76,6 +68,39 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/_build/html/casse_tete.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="196">
+                  <caret line="159" column="41" selection-start-line="159" selection-start-column="30" selection-end-line="159" selection-end-column="41" />
+                  <folding>
+                    <element signature="e#8501#8506#0" expanded="true" />
+                    <element signature="e#9196#9201#0" expanded="true" />
+                    <element signature="e#9566#9571#0" expanded="true" />
+                    <element signature="e#10087#10092#0" expanded="true" />
+                    <element signature="e#10840#10845#0" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#16365#16371#0" expanded="true" />
+                    <element signature="e#16372#16378#0" expanded="true" />
+                    <element signature="e#23880#23884#1" expanded="true" />
+                    <element signature="e#26572#26577#0" expanded="true" />
+                    <element signature="e#26581#26586#0" expanded="true" />
+                    <element signature="e#26795#26800#0" expanded="true" />
+                    <element signature="e#26804#26809#0" expanded="true" />
+                    <element signature="e#27067#27072#0" expanded="true" />
+                    <element signature="e#27076#27081#0" expanded="true" />
+                    <element signature="e#27578#27583#0" expanded="true" />
+                    <element signature="e#27587#27592#0" expanded="true" />
+                    <element signature="e#28064#28069#0" expanded="true" />
+                    <element signature="e#28073#28078#0" expanded="true" />
+                    <element signature="e#28645#28650#0" expanded="true" />
+                    <element signature="e#28657#28662#0" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#a#0;n#div#4;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/_build/html/_static/additional_javascript.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -85,11 +110,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/_build/html/historique.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="148">
-                  <caret line="289" column="10" selection-start-line="289" selection-start-column="10" selection-end-line="289" selection-end-column="10" />
+                <state relative-caret-position="97">
+                  <caret line="286" column="6" selection-start-line="286" selection-start-column="6" selection-end-line="286" selection-end-column="6" />
                   <folding>
                     <element signature="e#9478#9484#0" expanded="true" />
                     <element signature="e#9491#9497#0" expanded="true" />
@@ -117,6 +142,7 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -141,6 +167,11 @@
       <find>“</find>
       <find>”</find>
       <find>padding</find>
+      <find>inline</find>
+      <find>code</find>
+      <find>text</find>
+      <find>color</find>
+      <find>color: #</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,11 +202,12 @@
         <option value="$PROJECT_DIR$/_templates/layout.html" />
         <option value="$PROJECT_DIR$/_build/html/_static/additional_javascript.js" />
         <option value="$PROJECT_DIR$/_build/html/historique.html" />
-        <option value="$PROJECT_DIR$/_static/my-styles.css" />
-        <option value="$PROJECT_DIR$/biblioteques.rst" />
-        <option value="$PROJECT_DIR$/conf.py" />
-        <option value="$PROJECT_DIR$/casse_tete.rst" />
         <option value="$PROJECT_DIR$/historique.rst" />
+        <option value="$PROJECT_DIR$/data/train_model.py" />
+        <option value="$PROJECT_DIR$/biblioteques.rst" />
+        <option value="$PROJECT_DIR$/_static/my-styles.css" />
+        <option value="$PROJECT_DIR$/casse_tete.rst" />
+        <option value="$PROJECT_DIR$/conf.py" />
       </list>
     </option>
   </component>
@@ -218,6 +250,11 @@
               <item name="Site" type="b2602c69:ProjectViewProjectNode" />
               <item name="Site" type="462c0819:PsiDirectoryNode" />
               <item name="_templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Site" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Site" type="b2602c69:ProjectViewProjectNode" />
@@ -311,7 +348,7 @@
       <workItem from="1557491686189" duration="22907000" />
       <workItem from="1557567933394" duration="10991000" />
       <workItem from="1557600330541" duration="14007000" />
-      <workItem from="1557654080996" duration="8461000" />
+      <workItem from="1557654080996" duration="23018000" />
     </task>
     <task id="LOCAL-00001" summary="Début texte présentation des librairies et bibliographie">
       <created>1551999412947</created>
@@ -397,11 +434,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557616950117</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Images et titres Etat de l'art">
+      <created>1557662952251</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1557662952251</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add all files">
+      <created>1557663034636</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1557663034636</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112147000" />
+    <option name="totallyTimeSpent" value="126704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,7 +472,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35410765" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3045326" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -499,19 +550,11 @@
     <MESSAGE value="je sais plus où j'en suis" />
     <MESSAGE value="intégration vidéo youtube Shift it + biblio et à propos en bas de page" />
     <MESSAGE value="Grosse avancée..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Grosse avancée..." />
+    <MESSAGE value="Images et titres Etat de l'art" />
+    <MESSAGE value="add all files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add all files" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_build/html/_sources/index.rst.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_build/html/.doctrees/index.doctree">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/_build/doctrees/index.doctree">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -680,22 +723,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_build/html/_static/myjs/youtube_link.js" />
     <entry file="file://$PROJECT_DIR$/_build/html/_static/myjs/additional_footer.js" />
-    <entry file="file://$PROJECT_DIR$/_build/html/casse_tete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="226" column="6" selection-start-line="226" selection-start-column="6" selection-end-line="226" selection-end-column="6" />
-          <folding>
-            <element signature="e#7914#7919#0" expanded="true" />
-            <element signature="e#8609#8614#0" expanded="true" />
-            <element signature="e#8979#8984#0" expanded="true" />
-            <element signature="e#9500#9505#0" expanded="true" />
-            <element signature="e#10253#10258#0" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_templates/youtube_link.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -713,13 +740,6 @@
     <entry file="file://$PROJECT_DIR$/index.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/_static/my-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_build/html/_static/additional_javascript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -727,13 +747,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/biblioteques.rst">
+    <entry file="file://$PROJECT_DIR$/historique.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/_build/html/historique.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="289" column="10" selection-start-line="289" selection-start-column="10" selection-end-line="289" selection-end-column="10" />
+        <state relative-caret-position="97">
+          <caret line="286" column="6" selection-start-line="286" selection-start-column="6" selection-end-line="286" selection-end-column="6" />
           <folding>
             <element signature="e#9478#9484#0" expanded="true" />
             <element signature="e#9491#9497#0" expanded="true" />
@@ -750,6 +770,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_build/html/_static/bootstrap-3.3.7/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="3227" column="21" selection-start-line="3227" selection-start-column="13" selection-end-line="3227" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/Score_de_puissance.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblioteques.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/train_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/casse_tete.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_build/html/casse_tete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="159" column="41" selection-start-line="159" selection-start-column="30" selection-end-line="159" selection-end-column="41" />
+          <folding>
+            <element signature="e#8501#8506#0" expanded="true" />
+            <element signature="e#9196#9201#0" expanded="true" />
+            <element signature="e#9566#9571#0" expanded="true" />
+            <element signature="e#10087#10092#0" expanded="true" />
+            <element signature="e#10840#10845#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#16365#16371#0" expanded="true" />
+            <element signature="e#16372#16378#0" expanded="true" />
+            <element signature="e#23880#23884#1" expanded="true" />
+            <element signature="e#26572#26577#0" expanded="true" />
+            <element signature="e#26581#26586#0" expanded="true" />
+            <element signature="e#26795#26800#0" expanded="true" />
+            <element signature="e#26804#26809#0" expanded="true" />
+            <element signature="e#27067#27072#0" expanded="true" />
+            <element signature="e#27076#27081#0" expanded="true" />
+            <element signature="e#27578#27583#0" expanded="true" />
+            <element signature="e#27587#27592#0" expanded="true" />
+            <element signature="e#28064#28069#0" expanded="true" />
+            <element signature="e#28073#28078#0" expanded="true" />
+            <element signature="e#28645#28650#0" expanded="true" />
+            <element signature="e#28657#28662#0" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#4;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/conf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -757,11 +831,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/casse_tete.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/historique.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
+    <entry file="file://$PROJECT_DIR$/_static/my-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
