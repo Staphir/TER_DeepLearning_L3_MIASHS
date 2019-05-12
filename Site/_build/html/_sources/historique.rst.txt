@@ -184,8 +184,12 @@ En ce qui concerne l’état de l’art du Deep Learning appliqué à la résolu
 à l’heure actuelle il n’existe pas encore énormément de recherches ni de réelles applications
 qui s’avèrent utiles dans la vie de tous les jours.
 
-L’une des applications revenant le plus souvent lors de nos recherches était celle de la résolution
-de *jigsaw puzzles*, les puzzles de reconstruction d’image en 2 dimensions.
+.. image:: ../Site/pictures/sliding_game.gif
+    :align: center
+    :scale: 90%
+
+L’une des applications les plus souvent rencontrées lors de nos recherches était celle de la résolution de
+*jigsaw puzzles*, les puzzles de reconstruction d’image en 2 dimensions.
 Le format de ces puzzles leur permet une très bonne intégration au travers
 de modèles de Deep Learning car ceux-ci sont constitués de multiples images partageant
 des traits communs et des dimensions similaires (la plupart du temps).
@@ -193,11 +197,17 @@ des traits communs et des dimensions similaires (la plupart du temps).
 Il a alors été possible d’appliquer ce même schéma sur de la reconstruction
 de fragments issues de fouilles archéologiques. Comme le mentionnent M-M. Paumard et al.
 dans leur article de 2018, la reconstitution de ces fragments demande un temps ainsi
-qu’un effort considérable aux archéologistes et c’est pourquoi permettre d’automatiser
-ce processus peut s’avérer être un atout non négligeable.
+qu’un effort considérable aux archéologues et c’est pourquoi permettre d’automatiser
+ce processus grâce au Deep Learning peut s’avérer être un atout non négligeable.
 
 Pour entraîner leur modèle de Deep Learning,
 ils lui ont fourni les *features* partagées entre 2 fragments puis proposé une solution
 de combinaison spatiale de ces deux fragments. Cela résultant en un apprentissage
 de la méthode de combinaison par le modèle alors capable de, à partir de *features*
 présentent dans les 2 fragments, les assembler correctement.
+
+En ce qui concerne plus précisément les applications de Deep Learning aux jeux
+de casse-tête autre que les puzzles d’assemblage, nous avons trouvé certains papiers
+visant la résolution du fameux jeu mobile 2048 ainsi que de l’indémodable Rubik’s Cube.
+C’est sur ce dernier que nous nous sommes penchés pour réaliser notre propre implémentation
+du Deep Learning dans la résolution de casses-têtes.

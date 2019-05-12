@@ -2,26 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57c4b655-3899-437b-8ebc-750e43234c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/train_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/Score_de_puissance.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/shrug.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/Comparaison_performance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/Contribution_littéraire .png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Code/Jeux/Shiftit/generate_data.pseudoc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Code/Jeux/Shiftit/train_shiftit_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/Jeux/Shiftit/train_shiftit_new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/a_propos.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/a_propos.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/bibliographie.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/bibliographie.doctree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/biblioteques.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/biblioteques.doctree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/casse_tete.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/casse_tete.doctree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/environment.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/historique.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/historique.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/.doctrees/index.doctree" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/.doctrees/index.doctree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/_sources/a_propos.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/a_propos.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/_sources/bibliographie.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/bibliographie.rst.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/_sources/biblioteques.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/biblioteques.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_sources/casse_tete.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/casse_tete.rst.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/_static/my-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_static/my-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/_sources/historique.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/historique.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/_sources/index.rst.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/_sources/index.rst.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/a_propos.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/a_propos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/bibliographie.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/bibliographie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/biblioteques.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/biblioteques.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/casse_tete.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/casse_tete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_build/html/objects.inv" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/objects.inv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/historique.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/historique.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_build/html/searchindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/_build/html/searchindex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_static/my-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/_static/my-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a_propos.rst" beforeDir="false" afterPath="$PROJECT_DIR$/a_propos.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bibliographie.rst" beforeDir="false" afterPath="$PROJECT_DIR$/bibliographie.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/biblioteques.rst" beforeDir="false" afterPath="$PROJECT_DIR$/biblioteques.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/casse_tete.rst" beforeDir="false" afterPath="$PROJECT_DIR$/casse_tete.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/historique.rst" beforeDir="false" afterPath="$PROJECT_DIR$/historique.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/index.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,37 +39,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Site$sphinx_task_in_.coverage" NAME="sphinx task in  Coverage Results" MODIFIED="1557682956789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Site$sphinx_task_in_.coverage" NAME="sphinx task in  Coverage Results" MODIFIED="1557687433719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.464933">
+    <splitter split-orientation="horizontal" split-proportion="0.85263985">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/conf.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+                <state relative-caret-position="256">
+                  <caret line="168" selection-start-line="168" selection-end-line="168" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/casse_tete.rst">
-              <provider selected="true" editor-type-id="restructured-text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/_static/my-styles.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="289">
-                  <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+                  <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/biblioteques.rst">
+              <provider selected="true" editor-type-id="restructured-text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/bibliographie.rst">
               <provider selected="true" editor-type-id="restructured-text-editor" />
             </entry>
           </file>
@@ -114,7 +123,7 @@
             <entry file="file://$PROJECT_DIR$/_build/html/historique.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="97">
-                  <caret line="286" column="6" selection-start-line="286" selection-start-column="6" selection-end-line="286" selection-end-column="6" />
+                  <caret line="292" column="6" selection-start-line="292" selection-start-column="6" selection-end-line="292" selection-end-column="6" />
                   <folding>
                     <element signature="e#9478#9484#0" expanded="true" />
                     <element signature="e#9491#9497#0" expanded="true" />
@@ -172,6 +181,7 @@
       <find>text</find>
       <find>color</find>
       <find>color: #</find>
+      <find>&quot; &quot;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,12 +198,9 @@
         <option value="$PROJECT_DIR$/librairies.rst" />
         <option value="$PROJECT_DIR$/definition.rst" />
         <option value="$PROJECT_DIR$/_build/html/index.html" />
-        <option value="$PROJECT_DIR$/a_propos.rst" />
-        <option value="$PROJECT_DIR$/bibliographie.rst" />
         <option value="$PROJECT_DIR$/definitions.rst" />
         <option value="$PROJECT_DIR$/data/generate_data.pseudoc" />
         <option value="$PROJECT_DIR$/_templates/youtube_link.html" />
-        <option value="$PROJECT_DIR$/index.rst" />
         <option value="$PROJECT_DIR$/_static/additional_footer.js" />
         <option value="$PROJECT_DIR$/_build/html/casse_tete.html" />
         <option value="$PROJECT_DIR$/_build/html/_static/additional_footer.js" />
@@ -202,12 +209,15 @@
         <option value="$PROJECT_DIR$/_templates/layout.html" />
         <option value="$PROJECT_DIR$/_build/html/_static/additional_javascript.js" />
         <option value="$PROJECT_DIR$/_build/html/historique.html" />
-        <option value="$PROJECT_DIR$/historique.rst" />
         <option value="$PROJECT_DIR$/data/train_model.py" />
-        <option value="$PROJECT_DIR$/biblioteques.rst" />
         <option value="$PROJECT_DIR$/_static/my-styles.css" />
         <option value="$PROJECT_DIR$/casse_tete.rst" />
+        <option value="$PROJECT_DIR$/a_propos.rst" />
+        <option value="$PROJECT_DIR$/index.rst" />
         <option value="$PROJECT_DIR$/conf.py" />
+        <option value="$PROJECT_DIR$/historique.rst" />
+        <option value="$PROJECT_DIR$/bibliographie.rst" />
+        <option value="$PROJECT_DIR$/biblioteques.rst" />
       </list>
     </option>
   </component>
@@ -250,11 +260,6 @@
               <item name="Site" type="b2602c69:ProjectViewProjectNode" />
               <item name="Site" type="462c0819:PsiDirectoryNode" />
               <item name="_templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Site" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Site" type="b2602c69:ProjectViewProjectNode" />
@@ -348,7 +353,7 @@
       <workItem from="1557491686189" duration="22907000" />
       <workItem from="1557567933394" duration="10991000" />
       <workItem from="1557600330541" duration="14007000" />
-      <workItem from="1557654080996" duration="23018000" />
+      <workItem from="1557654080996" duration="27196000" />
     </task>
     <task id="LOCAL-00001" summary="Début texte présentation des librairies et bibliographie">
       <created>1551999412947</created>
@@ -448,11 +453,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557663034636</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fin notre programme + etat de l'art presque fini">
+      <created>1557683417858</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1557683417858</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126704000" />
+    <option name="totallyTimeSpent" value="130882000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,7 +564,8 @@
     <MESSAGE value="Grosse avancée..." />
     <MESSAGE value="Images et titres Etat de l'art" />
     <MESSAGE value="add all files" />
-    <option name="LAST_COMMIT_MESSAGE" value="add all files" />
+    <MESSAGE value="fin notre programme + etat de l'art presque fini" />
+    <option name="LAST_COMMIT_MESSAGE" value="fin notre programme + etat de l'art presque fini" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_build/doctrees/index.doctree">
@@ -655,12 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/a_propos.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bibliographie.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/definitions.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
@@ -737,9 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/_build/html/_static/additional_javascript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -747,13 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/historique.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/_build/html/historique.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
-          <caret line="286" column="6" selection-start-line="286" selection-start-column="6" selection-end-line="286" selection-end-column="6" />
+          <caret line="292" column="6" selection-start-line="292" selection-start-column="6" selection-end-line="292" selection-end-column="6" />
           <folding>
             <element signature="e#9478#9484#0" expanded="true" />
             <element signature="e#9491#9497#0" expanded="true" />
@@ -779,9 +780,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pictures/Score_de_puissance.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biblioteques.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/train_model.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -824,19 +822,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_static/my-styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a_propos.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/historique.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bibliographie.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblioteques.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>
 </project>

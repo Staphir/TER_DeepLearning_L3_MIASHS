@@ -27,7 +27,7 @@ applications of actual puzzle games implementations in order to get an overall i
 At last we designed our own application using Tensorflow to test whether those methods could be easily applied or not.
 Results concerning our own application raised the fact that a more in depth knowledge on how to choose layers accordingly to the problem
 is necessary to get the best performances out of our model. We did manage to get our system learning how to solve the handmade puzzle
-but did not get the final sloving accuracy we were expecting (results are an overall of 1 out of 5 chances of getting the right move at a certain time in the game).
+but did not get the final sloving accuracy we were expecting (results are an overall of 1 out of 3 chances of getting the right move at a certain time in the game).
 To conclude, we successfully implemented the "Shift it" game.
 
 ~~~~~~
