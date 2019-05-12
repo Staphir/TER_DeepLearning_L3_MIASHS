@@ -100,7 +100,7 @@ html_theme_options = {
     # Currently, the supported themes are:
     # - Bootstrap 2: https://bootswatch.com/2
     # - Bootstrap 3: https://bootswatch.com/3
-    'bootswatch_theme': "united",
+    'bootswatch_theme': "cerulean",
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.
     # Navigation bar title. (Default: ``project`` value)

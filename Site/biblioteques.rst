@@ -1,12 +1,21 @@
 .. title:: Bibliotèques python
 
-Introduction
+Avans-propos
 ============
 
 ~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 2
+
+Avant de vous présenter les principales bibliothèques python permettant de faire du Deep-Learning,
+il faut savoir qu’une bibliothèque scientifique appelé NumPy est utilisé
+dans toutes les bibliothèques qui vont suivre. NumPy permet certes,
+d’avoir un affichage graphique (d’images par exemple), mais
+la principale utilité de NumPy pour le Deep-Learning réside dans la création
+et la manipulation de matrice à n dimension (noté numpy.array).
+
+`Page d'accueil NumPy <http://www.numpy.org/>`_
 
 
 Présentation de différentes bibliotèques
@@ -17,16 +26,6 @@ Présentation de différentes bibliotèques
 .. toctree::
    :maxdepth: 2
 
-Numpy
-*********
-
-**Description**
-
-Bibliotèques contenant plusieurs “outils” scientifiques notamment des tableaux multi-dimensionnels (numpy.array)
-et des fonctions d’affichages graphiques (images, graphique…)
-
-`source <http://www.numpy.org/>`_
-
 Theano
 ***********
 
@@ -34,7 +33,7 @@ Theano
 
 LA “sous-couche” des autres bibliotèques d’apprentissages de réseaux de neurones. Comme tous les autres utilise des Numpy.arrays
 
-`source <http://deeplearning.net/software/theano/index.html>`_
+`Page d'accueil Theano <http://deeplearning.net/software/theano/index.html>`_
 
 Pytorch
 ************
@@ -47,7 +46,7 @@ et de sa rapidité pour mettre en place des modèles d’apprentissages. Elle a 
 un processus de modélisation simple et son mode de définition se rapproche beaucoup de la programmation standard.
 Mais par contre il n’y a pas d’interface permettant de visualiser le processus ce qui peut compliquer la tâche des programmeurs.
 
-`source <https://pytorch.org/>`_
+`Page d'accueil Pytorch <https://pytorch.org/>`_
 
 Keras
 *********
@@ -59,7 +58,7 @@ Seul point faible, la personnalisation est difficile à mettre en place.
 Elle se programme sous forme de blocs, ce qui fait sa simplicité et réduit la longueur du code.
 Les personnes utilisants Keras commencent à migrer vers TensorFlow qui est justement basé sur keras mais ajoute de nouvelles possibilitées.
 
-`source <https://keras.io/>`_
+`Page d'accueil Keras <https://keras.io/>`_
 
 TensorFlow
 ***************
@@ -74,7 +73,7 @@ Elle a pour avantage d’être très utilisée ce qui fait qu’il y a beaucoup 
 Point faible, elle est lente car il y a beaucoup de fonctionnalitées implémentées qui ne seront pas utilisé par tout le monde mais forcément importés.
 
 
-`source <https://www.tensorflow.org>`_
+`Page d'accueil TensorFlow <https://www.tensorflow.org>`_
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
