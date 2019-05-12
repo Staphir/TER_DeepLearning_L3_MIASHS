@@ -132,23 +132,44 @@ une comparaison de l’utilisation, de l’intérêt et de la popularité des di
 Contribution
 ************
 
-L'article `Deep Learning Framework Power Scores 2018 <https://towardsdatascience.com/deep-learning-framework-power-scores-2018-23607ddf297a>`_
-de Jeff Hale nous a permis d'avoir une comparaison de l’utilisation,
-de l’intérêt et de la popularité des différentes bibliothèques python.
 
-Jeff Hale a regroupé tous ses résultats et en a fait un seul et
-même graphique où il donne des scores à chaque bibliothèque.
-Sur ce graphique il est possible de voir que TensorFlow est largement plus utilisé que les autres.
-Cependant, il faut prendre en compte le fait que TensorFlow est en quelques sortes
+La contribution est elle aussi crucial car c’est un facteur déterminant lorsque l’on choisit
+la bibliothèque que l’on souhaite utiliser. En effet il est plus rassurant de commencer un projet
+en utilisant une bibliothèque pour laquelle il y a beaucoup de ressources sur internet que ce soit
+des livre des tutoriels ou tout simplement un nombre conséquent d’utilisateurs.
+L'article Deep Learning Framework Power Scores 2018 de Jeff Hale nous a permis d'avoir une
+comparaison de l’utilisation, de l’intérêt et de la popularité des différentes bibliothèques python.
+Le graphique ci-dessus nous montre les pourcentage de contenue que l’on peut trouver de différentes formes
+comme la recherche d’emplois, l’utilisation les activitées GitHub et le volume de recherche sur Google.
+
+.. image:: ../Site/pictures/popularite_internet.png
+    :align: center
+
+Source : Towards Data Science
+
+Le graphique suivant quand à lui reflète le contenu plus littéraire comme le nombre d’article ArXiv,
+le nombre de livre et le nombre d’article de moyenne taille.
+
+
+.. image:: ../Site/pictures/contribution_litteraire.png
+    :align: center
+
+Source : Towards Data Science
+
+Jeff Hale a regroupé tous ces résultats et en a fait un seul et même graphique, qu’on peut retrouver ci-dessous,
+où il donne des scores à chaque bibliothèque. Sur ce graphique il est possible de voir que TensorFlow est largement
+plus utilisé que les autres. Cependant, il faut prendre en compte le fait que TensorFlow est en quelques sortes
 une amélioration / surcouche de Keras et que Keras éxiste depuis plus longtemps que Pytorch et TensorFlow.
-
 On peut par exemple proposé que les personnes utilisants Keras migre de plus en plus vers Tensorflow
 sachant que certaines personnes (du fait de sa simplicité) commencer directement le Deep Learning avec Tensorflow.
 PyTorch, d’un autre côté, est plus compliqué et est utilisé dans des cas un peu plus particulier
 car permet plus de personnalisation. Enfin, Theano est classé dernier mais cela semble logique
 du fait que c’est une des premières bibliothèques python permettant de faire du Deep Learning et qui est,
-par conséquent, moins performante et dispose de moins de fonctionnalités. Theano est aussi plus
-difficile à prendre en main et par conséquent est nettement moins utilisé.
+par conséquent, moins performante et dispose moins de fonctionnalités. Theano est aussi plus difficile
+à prendre en main et par conséquent est nettement moins utilisé.
 
 .. image:: ../Site/pictures/Score_de_puissance.png
+    :align: center
+
+Source: `Deep Learning Framework Power Scores 2018 <https://towardsdatascience.com/deep-learning-framework-power-scores-2018-23607ddf297a>`_
 
