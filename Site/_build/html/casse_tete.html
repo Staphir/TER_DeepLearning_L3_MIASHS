@@ -16,8 +16,6 @@
     <script type="text/javascript" src="_static/language_data.js"></script>
     <script type="text/javascript" src="_static/translations.js"></script>
     <script type="text/javascript" src="_static/additional_javascript.js"></script>
-    <script type="text/javascript" src="_static/myjs/additional_javascript.js"></script>
-    <script type="text/javascript" src="_static/myjs/youtube_link.js"></script>
     <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -97,7 +95,12 @@
 <li><a class="reference internal" href="#">Introduction</a></li>
 <li><a class="reference internal" href="#la-methode-dimplementation">La méthode d’implémentation</a></li>
 <li><a class="reference internal" href="#le-shift-it">Le Shift It</a><ul>
-<li><a class="reference internal" href="#youtube-shift-it">youtube shift it</a></li>
+<li><a class="reference internal" href="#exemple-du-shift-it-sur-android">Exemple du Shift It sur Android</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lentrainement-de-lia">L’entraînement de l’IA</a><ul>
+<li><a class="reference internal" href="#la-creation-des-donnees-dentrainement">La création des données d’entraînement :</a></li>
+<li><a class="reference internal" href="#le-modele-dentrainement">Le modèle d’entraînement</a></li>
 </ul>
 </li>
 </ul>
@@ -192,9 +195,18 @@ avec un bon taux de réussite un Rubik’s cube mélangé 6 fois (6 pas de diff�
 Le modèle n’est pas parfait et au delà de 6 mouvements aléatoires,
 le NN ne parvient plus vraiment à trouver les solutions comme on peut le voir ci dessous.</p>
 <a class="reference internal image-reference" href="_images/cube_solving.gif"><img alt="_images/cube_solving.gif" class="align-center" src="_images/cube_solving.gif" style="width: 426.40000000000003px; height: 366.6px;" /></a>
-<p>Cette méthode est globalement la seule et unique implémentation</p>
-<p>Après avoir étudié cette exemple appliqué au rubik’s cube, nous avons voulu faire de même avec un autre casse-tête, le Shift It.
-Il a donc fallu que nous programmons le nôtre tout en réfléchissant à des fonctions permettants l’implémentation de l’algorithme de Deep-Learning.</p>
+<p>Etant donné cette implémentation est globalement la seule et unique
+que nous avons pu relever au travers de nos recherches,
+le choix de la méthode de construction de notre propre réseau de neurone
+n’en a finalement pas été réellement un.</p>
+<p>Nous avons donc commencé par construire notre propre jeu,
+puzzle numérique sur lequel entraîner notre réseau de neurones
+tout en prenant compte du fait qu’il allait devoir communiquer
+d’une certaine manièreavec d’autre programmes de Machine Learning.</p>
+<p>Le jeu que nous avons décidé de reproduire se nomme le Shift It.
+C’est un jeu qui fut développé à l’origine sous Android mais qui à l’instant n’est plus disponible
+sur les plateformes de téléchargement principales (Google Play Store) bien qu’il soit toujours possible
+de le récupérer sous forme de fichier .apk sur certains hébergeurs.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="le-shift-it">
@@ -204,11 +216,176 @@ Il a donc fallu que nous programmons le nôtre tout en réfléchissant à des fo
 </div>
 <p>Le Shift It se joue avec une grille comportant des carrés de plusieurs couleurs.
 Le but est d’avoir une grille où toutes les cases de la même couleur formes une seul zone.
-Il faut donc autant de zones que de couleurs et que chaque case soit adjacente avec au moins une autre case de la même couleur.
-Voici un exemple du jeu sur Android :</p>
-<div class="section" id="youtube-shift-it">
-<h2>youtube shift it<a class="headerlink" href="#youtube-shift-it" title="Lien permanent vers ce titre">¶</a></h2>
-<a class="reference internal image-reference" href="_images/Shiftit_GUI2.gif"><img alt="_images/Shiftit_GUI2.gif" class="align-center" src="_images/Shiftit_GUI2.gif" style="width: 320.0px; height: 390.0px;" /></a>
+Il faut donc autant de zones que de couleurs et que chaque case soit adjacente avec au moins une autre case de la même couleur.</p>
+<p>Voici un visuel du jeu :</p>
+<div class="section" id="exemple-du-shift-it-sur-android">
+<h2>Exemple du Shift It sur Android<a class="headerlink" href="#exemple-du-shift-it-sur-android" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Notre version du Shift It est composé d’une grille de taille et de nombre de couleurs modifiables
+(pour l’instant le nombre de couleurs à été bloqué à 2). Pour l’apprentissage de notre modèle,
+nous nous sommes fixé une taille de 5x5 et uniquement 2 couleurs différents.
+Des configurations plus compliqués d’entraînement seront envisageables dans le futur.</p>
+<p>Nous avons commencé par créer une classe Python, correspondant à la partie fonctionnelle du jeu,
+doté d’attributs permettants de stocker la hauteur et la largeur de la grille en plus de la grille elle-même
+ainsi que le chemin de mouvements nécessaire à effectuer depuis l’état actuel pour obtenir l’état de résolution.
+Elle conserve aussi une sauvegarde de son état résolu ainsi qu’un solveur qui utilise le modèle généré grâce au Deep Learning.</p>
+<p>Les principales fonctionnalités du programme sont les suivantes :</p>
+<ul class="simple">
+<li>generate() : permet de générer aléatoirement une grille de jeu résolue.</li>
+<li>shuffle(n) : permet de sélectionner aléatoirement des mouvements et les appliquer,
+le paramètre n correspond au nombre de mouvements aléatoire appliqués.
+Cette méthode renvoie le chemin inverse de celui qui a été fait en mélangeant.</li>
+<li>shift(key) : permet d’effectuer le mouvement de la ligne ou de la colonne déterminé par la valeur key.</li>
+<li>solve_with_IA(limit) : permet de faire fonctionner le réseau de neurone sur l’état actuel de la grille
+pour prédire le mouvement à faire. Le paramètre limit correspond au nombre maximum de mouvement
+que doit prédire le réseau (s’avère plutôt utile lorsque le modèle ne parvient pas à atteindre
+la résolution - ce qui arrive 99% du temps)</li>
+<li>reset() : permet de remettre la grille à son état résolu mais sans générer une nouvelle configuration.</li>
+</ul>
+<p>Ainsi que les principales propriétés :</p>
+<ul class="simple">
+<li>width : largeur</li>
+<li>height : hauteur</li>
+<li>state: booléen indiquant si le jeu est résolu ou non</li>
+<li>moves : la liste des mouvements possibles en fonction de la grille</li>
+</ul>
+<p>Les mouvements possibles sont représentés par des chaînes de caractères de longueur 2 ou 1.
+Elles sont composées d’un entier désignant la ligne ou la colonne à faire défiler ainsi
+que du caractère «&nbsp;‘&nbsp;» (apostrophe) désignant le sens de défilement.
+Si le défilement est dans le sens normal (haut en bas pour la colonne et de gauche à droite pour la ligne)
+alors la chaîne de caractères est uniquement composée du numéro de la ligne ou colonne.
+Ce numéro désignant la ligne ou la colonne est un entier pair si l’élément sélectionné est une ligne et,
+à l’inverse, est impair si c’est une colonne. La première ligne de la grille sera numéroté 0,
+la deuxième ligne sera numéroté 2 et la troisième colonne sera numéroté 5 par exemple.
+Ainsi le mouvement désigné par 9’ correspondra à un défilement de bas en haut de la dernière colonne de la grille.
+Alors sur une grille de NxM, il y aura (N+M)x2 mouvements possibles soit 20 dans une configuration de 5 par 5.</p>
+<p>Notre code est accessible au lien suivant : <a class="reference external" href="https://github.com/Staphir/TER_DeepLearning_L3_MIASHS">GitHub</a></p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="lentrainement-de-lia">
+<h1>L’entraînement de l’IA<a class="headerlink" href="#lentrainement-de-lia" title="Lien permanent vers ce titre">¶</a></h1>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+</div>
+<p>Afin d’entraîner notre programme d’intelligence artificielle, nous avions besoin de deux choses.
+D’une part des données d’entrainements qui seront construites en utilisant l’implémentation de
+notre Shift it et d’autre part du modèle dans lequel nous feront passer ces données.</p>
+<div class="section" id="la-creation-des-donnees-dentrainement">
+<h2>La création des données d’entraînement :<a class="headerlink" href="#la-creation-des-donnees-dentrainement" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Pour construire un set de données utilisables par un modèle d’apprentissage,
+nous nous sommes inspirés de la méthode de Jeremy Pinto et avons généré de la même manière
+que lui des pairs grilles / mouvement, les grilles correspondant aux features et les mouvements aux labels.
+Il est possible de passer directement le mouvement sous forme de chaîne de caractère
+au système d’apprentissage mais dans notre cas nous avons simplifié cette information
+en associant un indice à chaque mouvement. Ces sont ces indices qui sont fournis au système.</p>
+<p>Premièrement, nous avons construit la méthode de génération de parties :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_game</span><span class="p">()</span> <span class="p">:</span>
+
+    <span class="k">if</span> <span class="n">_use_random_playground</span> <span class="p">:</span>
+        <span class="c1"># generate random playground</span>
+        <span class="n">mygame</span><span class="o">.</span><span class="n">generate</span><span class="p">()</span>
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="c1"># or reset to learn on exact same starting pattern</span>
+        <span class="c1"># would be nice to try out if no result with random patterns</span>
+        <span class="n">mygame</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+
+    <span class="c1"># shuffle playground and get path to success</span>
+    <span class="n">path_to_success</span> <span class="o">=</span> <span class="n">mygame</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">max_moves</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">mygame</span><span class="p">),</span> <span class="n">path_to_success</span>
+</pre></div>
+</div>
+<p>Cette méthode permet de créer un objet jeu (une instance de notre ShiftIt)
+dans un état mélangé ainsi que le chemin vers succès associé (une liste de mouvements).
+Ce couple d’élément est alors renvoyé par la méthode une fois qu’il est créé.</p>
+<p>La méthode suivante consiste en, pour un couple d’éléments comme cités juste avant,
+générer toutes les paires grille / mouvement comme expliqué plus tôt (algorithme en pseudocode).
+De cette manière, si l’on mélange chacun des jeux en 10 coups, ils se verront tous associé
+une liste de 10 pairs grille / mouvement correspondant aux états intermédiaires avec
+les mouvements à effectuer pour passer à celui suivant.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_game_data</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span> <span class="p">:</span>
+    <span class="c1"># grid x next_step_to_solution</span>
+    <span class="n">_solList</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="c1"># iterate over the path</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">path</span> <span class="p">:</span>
+
+        <span class="c1"># get the playground as numpy.array before applying key</span>
+        <span class="n">_grid</span> <span class="o">=</span> <span class="n">game</span><span class="o">.</span><span class="n">list_grid</span>
+
+        <span class="c1"># get the integer associated to the key</span>
+        <span class="n">_label</span> <span class="o">=</span> <span class="n">reverse_moves</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+        <span class="c1"># store grid and integer</span>
+        <span class="n">_solList</span><span class="o">.</span><span class="n">append</span><span class="p">([</span> <span class="n">_grid</span><span class="p">,</span> <span class="n">_label</span> <span class="p">])</span>
+
+        <span class="c1"># execute key</span>
+        <span class="n">game</span><span class="o">.</span><span class="n">shift</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+
+    <span class="c1"># send back each resolution step</span>
+    <span class="k">return</span> <span class="n">_solList</span>
+</pre></div>
+</div>
+<p>Pour finir, la dernière méthode a été implémentée sous la forme d’un générateur Python
+(<a class="reference external" href="https://wiki.python.org/moin/Generators">voir la documentation</a>) et permet de renvoyer,
+un nombre de fois définit par la variable <em>game_count</em>,
+le traitement des éléments renvoyés par la première méthode au travers de la seconde.
+Ainsi, nous créons un plus gros ensemble de pairs grille / mouvement
+qui sont alors fournis séparément au modèle, avec d’un côté les grilles à partir desquelles
+extraire les informations et prédire les mouvements et de l’autre, les mouvements correctes
+vers lesquels les prédictions doivent tendre (utilisés pour la rétropropagation).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">data_generator</span><span class="p">(</span><span class="n">game_count</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="p">:</span> <span class="c1"># iterator</span>
+    <span class="c1"># set iteration number</span>
+    <span class="n">_iter</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">while</span> <span class="n">_iter</span> <span class="o">&lt;</span> <span class="n">game_count</span> <span class="p">:</span>
+
+        <span class="c1"># get ready for use game object and path</span>
+        <span class="n">game</span><span class="p">,</span> <span class="n">path</span> <span class="o">=</span> <span class="n">generate_game</span><span class="p">()</span>
+        
+        <span class="c1"># yield solution list for each game</span>
+
+        <span class="k">yield</span> <span class="n">generate_game_data</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+
+        <span class="n">_iter</span> <span class="o">+=</span><span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="le-modele-dentrainement">
+<h2>Le modèle d’entraînement<a class="headerlink" href="#le-modele-dentrainement" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Ici, le modèle d’entraînement fait référence à l’ensemble des couches utilisées
+pour construire le réseau de neurone au complet, donc à l’<em>input layer</em>, l’<em>output layer</em>,
+ainsi que les <em>hidden layers</em> qui viennent entre les deux.
+Il est en généralement requis de dédier un temps relativement conséquent à son optimisation,
+c’est à dire à savoir exactement quels types de layers implémenter et dans quel ordre.</p>
+<p>Malheureusement, nous n’avons pas eu les connaissances nécessaires afin de pouvoir
+mener cette étape à bien et de ce fait avons dû utiliser (et modifier) les modèles proposés par Jeremy Pinto
+ainsi que d’autres que l’on a pu rencontrer au travers de différents tutoriels trouvés sur le net.
+Il est d’ailleurs fort probable que ce fut la raison pour laquelle notre modèle
+n’était pas en mesure de résoudre correctement même la plus simple des configuration que nous lui fournissions…</p>
+<p>Ci-dessous le modèle que nous avons utilisé :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+
+<span class="c1"># --- input ---</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">input_shape</span><span class="o">=</span><span class="n">input_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:],</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
+<span class="c1"># model.add(MaxPooling2D(pool_size=(2,2), dim_ordering=&quot;th&quot;))</span>
+
+<span class="c1"># --- hidden layers ---</span>
+<span class="c1"># model.add(Conv2D(64, (3,3), input_shape=input_shape[1:], activation=&#39;relu&#39;))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
+<span class="c1"># model.add(MaxPooling2D(pool_size=(2,2), dim_ordering=&quot;th&quot;))</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Flatten</span><span class="p">())</span>
+<span class="c1"># model.add(Conv2D(64, kernel_size=(3,3), activation=&#39;relu&#39;))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;tanh&#39;</span><span class="p">))</span>
+
+<span class="c1"># --- output ---</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">outputl</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
 </div>
 </div>
 

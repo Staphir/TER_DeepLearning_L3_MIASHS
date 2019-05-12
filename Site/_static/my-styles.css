@@ -1,7 +1,19 @@
 *{
     text-align: justify;
+    font: 15px "Calibri", sans-serif;
 }
 
 .reference{
     text-align: left;
+}
+
+#exemple-du-shift-it-sur-android{
+    text-align: center;
+    display: block;
+}
+
+img,video{
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
