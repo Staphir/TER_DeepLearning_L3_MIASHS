@@ -165,7 +165,7 @@ html_theme_options = {
 
 # (Optional) Logo. Should be small enough to fit the navbar (ideally 24x24).
 # Path should be relative to the ``_static`` files directory.
-# html_logo = "C:\Users\MaximeD\Documents\Cours\L3MIASHS\S6\TER\Sphinx\\builddir\_images\icon-DeepLearning.png"
+# html_logo = "pictures/icon.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

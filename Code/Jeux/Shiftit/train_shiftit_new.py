@@ -11,16 +11,16 @@ import pickle
 from copy import deepcopy
 
 #import uses tensorflow 2.0
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
-from tensorflow.keras.utils import to_categorical
-from shiftit import ShiftIt
+# from tensorflow.keras.models import Sequential
+# from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
+# from tensorflow.keras.utils import to_categorical
+# from shiftit import ShiftIt
 
 #import Maxime
-# from Jeux.Shiftit.shiftit import ShiftIt
-# from tensorflow.python.keras.models import Sequential
-# from tensorflow.python.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
-# from tensorflow.python.keras.utils import to_categorical
+from Jeux.Shiftit.shiftit import ShiftIt
+from tensorflow.python.keras.models import Sequential
+from tensorflow.python.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
+from tensorflow.python.keras.utils import to_categorical
 
 # import communs
 import numpy as np
