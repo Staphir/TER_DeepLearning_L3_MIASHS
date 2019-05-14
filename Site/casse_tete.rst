@@ -1,4 +1,4 @@
-.. title:: Notre programme
+ .. title:: Notre programme
 
 Introduction
 ============
@@ -287,7 +287,7 @@ sa pente étant visuellement bien plus négative que celle du système aléatoir
 Ci-dessous sont représentés le nombre moyens de coups avant résolution par rapport
 au nombre de coups effectués lors du mélange :
 
-.. image:: ../Site/pictures/nb_shuffle_perf.png
+.. image:: ../Site/pictures/nb_shuffle_moves.png
 
 On observe ici aussi une nette différence de performance où l’IA tend à prédominer
 avec un nombre moyen de coups globalement inférieur à celui du système aléatoire.
